@@ -46,8 +46,8 @@
 #studio-practices .small { color:var(--muted); font-size:14px; }
 #studio-practices .hero { display:grid; grid-template-columns:1.35fr 1fr; gap:6%; align-items:center; }
 #studio-practices .hero img { display:block; width:100%; max-height:360px; object-fit:cover; aspect-ratio:1.05; }
-#studio-practices .forma .hero img { width:min(100%,270px); aspect-ratio:4/5; max-height:338px; margin:auto; object-position:center 28%; }
-#studio-practices .forma .hero figure { border-left:1px solid var(--line); padding-left:24px; }
+#studio-practices .forma .hero img { width:100%; height:auto; aspect-ratio:4/5; max-height:420px; margin:0; object-position:center 28%; }
+#studio-practices .forma .hero figure { width:100%; max-width:336px; justify-self:end; }
 #studio-practices .forma .hero figcaption { max-width:270px; margin:10px auto 0; }
 #studio-practices .vale .hero { grid-template-columns:1fr 1.15fr; }
 #studio-practices .vale .hero img { aspect-ratio:1.25; }
@@ -68,8 +68,8 @@
 #studio-practices .morrow .offer { border:1px solid var(--line); border-radius:18px; background:var(--panel); }
 #studio-practices .morrow .offer .eyebrow { text-transform:none; letter-spacing:0; }
 #studio-practices .split-note { display:grid; grid-template-columns:1fr 1.5fr; gap:7%; border-top:1px solid var(--line); padding-top:30px; }
-#studio-practices .profile { display:grid; grid-template-columns:110px 1fr; gap:24px; align-items:start; }
-#studio-practices .profile img { display:block; width:110px; height:140px; object-fit:cover; }
+#studio-practices .profile { display:grid; grid-template-columns:minmax(200px,280px) minmax(0,1fr); gap:clamp(24px,4cqi,48px); align-items:center; }
+#studio-practices .profile img { display:block; width:100%; height:auto; aspect-ratio:4/5; object-fit:cover; object-position:center 28%; }
 #studio-practices .profile p { margin-top:12px; max-width:42em; }
 #studio-practices .band { padding:30px; background:var(--panel); display:flex; align-items:center; justify-content:space-between; gap:28px; }
 #studio-practices .band p { margin-top:12px; max-width:43em; }
@@ -113,16 +113,16 @@
  #studio-practices .hero,#studio-practices .vale .hero,#studio-practices .morrow .hero,#studio-practices .detail-top,#studio-practices .split-note,#studio-practices .visit-grid { grid-template-columns:1fr; gap:28px; }
  #studio-practices .hero h1 { max-width:15ch; }
  #studio-practices .hero img { max-height:270px; aspect-ratio:1.4; }
- #studio-practices .forma .hero figure { border:0; padding:0; display:grid; grid-template-columns:96px 1fr; align-items:center; gap:18px; }
- #studio-practices .forma .hero img { width:96px; height:120px; margin:0; }
+ #studio-practices .forma .hero figure { width:100%; max-width:260px; justify-self:center; display:block; }
+ #studio-practices .forma .hero img { width:100%; height:auto; max-height:none; margin:0; }
  #studio-practices .forma .hero figcaption { margin:0; }
  #studio-practices .morrow .hero img { border-radius:60px 60px 6px 6px; aspect-ratio:1.4; }
  #studio-practices .offer-grid,#studio-practices .columns { grid-template-columns:1fr; }
  #studio-practices .service-row { grid-template-columns:28px 1fr; gap:12px; }
  #studio-practices .service-row .text-link { grid-column:2; padding:0; }
  #studio-practices .profile { grid-template-columns:1fr; gap:18px; }
- #studio-practices .profile figure { display:flex; align-items:center; gap:18px; }
- #studio-practices .profile img { width:80px; height:102px; }
+ #studio-practices .profile figure { display:block; width:min(100%,260px); justify-self:center; }
+ #studio-practices .profile img { width:100%; height:auto; }
  #studio-practices .profile h3 { font-size:24px; }
  #studio-practices .band { flex-direction:column; align-items:flex-start; padding:25px; }
  #studio-practices .section { margin-top:44px; }
@@ -143,6 +143,16 @@ body {margin:0;background:light-dark(#f8f8f5,#1d2229);}
 #studio-practices .fiction-note {display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12px;letter-spacing:0;}
 #studio-practices .fiction-note a {text-decoration:underline;text-underline-offset:3px;}
 #studio-practices .profile figure {margin:0;}
+#studio-practices .profile {max-width:1000px; padding:clamp(20px,3cqi,36px); background:var(--practice-surface); border:1px solid var(--line);}
+#studio-practices .profile h3 {font-size:clamp(28px,3cqi,36px); margin-top:12px;}
+#studio-practices .profile .eyebrow {margin-top:0;}
+#studio-practices .profile .provider-note {color:var(--muted);}
+#studio-practices .provider-section {display:grid;grid-template-columns:1fr;gap:24px;}
+#studio-practices .provider-section .profile {max-width:none;}
+#studio-practices .consultation-intro {font-size:16px;color:var(--muted);}
+@container practice (min-width:601px) {#studio-practices .forma .hero {grid-template-columns:minmax(0,1.5fr) minmax(240px,.8fr);}}
+@container practice (max-width:700px) {#studio-practices .profile {grid-template-columns:1fr;} #studio-practices .profile figure {width:min(100%,260px);justify-self:center;}}
+
 #studio-practices .practice-footer a {text-decoration:underline;text-underline-offset:4px;}
 #studio-practices .practice-footer .nav a {text-decoration:none;}
 #studio-practices .skip {position:absolute;top:-100px;left:12px;z-index:2;padding:12px;background:var(--paper);color:var(--ink);}

@@ -1,6 +1,6 @@
 # Aptelum Studio examples
 
-Three public design examples for feedback: Forma Aesthetics, Vale Skin Studio, and Morrow Wellness & Body Care. These are fictional practices with generated imagery. They do not offer appointments or clinical services.
+Three public design examples for feedback: Forma Aesthetics, Vale Skin Studio, and Morrow Wellness & Body Care. These are fictional practices with generated imagery. They do not offer appointments or clinical services. Complimentary initial consultations are an illustrative offer chosen for these examples, not a claim about every medspa or finalized Aptelum Studio pricing; real client offers must be confirmed individually.
 
 Open the [showcase](https://asbillings07.github.io/aptelum-studio-examples/) or visit the individual `forma/`, `vale/` and `morrow/` directories.
 
