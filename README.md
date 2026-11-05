@@ -4,7 +4,9 @@ Three public design examples for feedback: Forma Aesthetics, Vale Skin Studio, a
 
 Open the [showcase](https://asbillings07.github.io/aptelum-studio-examples/) or visit the individual `forma/`, `vale/` and `morrow/` directories.
 
-Each example contains seven static pages with ordinary links, native menus and booking-preview disclosures. No JavaScript, forms, browser storage, analytics, external fonts, patient data or real booking integration. All imagery is served from this repository. GitHub Pages handles hosting and its own security logs; see the site's privacy page.
+Each example contains seven content pages with ordinary links and native menus. Vale now includes fuller service details, a concise homepage, bounded provider portraits, native FAQs and a consultation/location page that honestly shows requests as unavailable. Its previous flat page URLs remain usable. Forma and Morrow retain their existing booking-preview disclosures. No JavaScript, forms, browser storage, analytics, external fonts, patient data or real booking integration. All imagery is served from this repository. GitHub Pages handles hosting and its own security logs; see each site's privacy link.
+
+Vale's assets and navigation are scoped under `vale/` for this GitHub Pages project path. Its static privacy page describes the current GitHub host. Unknown URLs continue to use the shared gallery's existing root `404.html`; `vale/404.html` is also available to inspect the Vale missing-page design. Noindex directives remain in place for feedback, without implying privacy or access control. The sitemap is a route inventory; no search submission or indexing request is made.
 
 This repository contains only publication-ready example assets, not private planning or company source documents. It does not establish production/client readiness, clinical approval, accessibility conformance, finalized service pricing or asset/trademark exclusivity.
 
