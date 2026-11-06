@@ -77,6 +77,25 @@ body { margin:0; }
 .line-picture.people span:before { content:""; position:absolute; width:26px; height:26px; border:1px solid #94b9d2; border-radius:50%; top:-34px; left:9px; background:#6587ac33; }
 .line-picture.people span:nth-child(2) { transform:translateY(-10px); }
 .tech-status { padding:28px 0; margin-top:60px; border-top:1px solid var(--line); color:var(--muted); }
+.story-route { line-height:1.8; }
+.tech-scenario { display:grid; grid-template-columns:1.1fr 1fr; gap:10%; align-items:center; padding:70px 0; border-top:1px solid var(--line); }
+.tech-scenario h2,.tech-conversation h2 { margin:18px 0 24px; }
+.tech-scenario p,.tech-conversation p { color:var(--muted); max-width:34em; }
+.workflow-picture { padding:30px; border:1px solid #59718b; background:linear-gradient(145deg,#263c55,#142238); display:grid; justify-items:center; gap:8px; }
+.workflow-picture>span:not(.flow-arrow) { width:100%; max-width:300px; padding:17px 22px; background:#1a2c41; border:1px solid #748da6; display:flex; gap:22px; align-items:center; }
+.workflow-picture small { color:#b4c8dd; font-size:12px; }
+.flow-arrow { color:#b4c8dd; }
+.tech-journey { padding-top:40px; }
+.tech-journey h2 { margin-top:18px; }
+.tech-conversation { display:grid; grid-template-columns:1.1fr 1fr; gap:10%; margin-top:90px; padding-top:60px; border-top:1px solid var(--line); align-items:start; }
+.tech-demo { margin-top:25px; border:1px solid #748da6; padding:0 24px; }
+.tech-demo summary { min-height:90px; padding:24px 0; cursor:pointer; line-height:1.6; }
+.tech-demo ul { padding:0 0 0 20px; }
+.tech-demo li { margin:0 0 18px; }
+.tech-demo p { margin:24px 0; font-size:14px; }
+.visual-edition .conversation-questions { padding-left:24px; max-width:47em; }
+.visual-edition .conversation-questions li { padding-left:4px; margin:0 0 18px; }
+.visual-edition .consultation-term { font-size:14px; margin-top:14px; }
 .studio-index .skip { position:absolute; left:12px; top:-90px; padding:12px; background:var(--paper); color:var(--ink); z-index:3; }
 .studio-index .skip:focus { top:12px; }
 
@@ -134,6 +153,7 @@ body.visual-edition .detail-top { align-items:center; }
 body.visual-edition .detail-top img { aspect-ratio:1.35; }
 body.visual-edition .profile { background:transparent; border:0; padding:0; }
 @media(max-width:800px) {
+ .tech-scenario,.tech-conversation { grid-template-columns:1fr; gap:30px; }
  .studio-intro,.wellness-heading,.tech-preview .studio-intro { grid-template-columns:1fr; gap:28px; padding:46px 0; }
  .studio-intro .intro-copy { max-width:36em; }
  .industry-grid { gap:22px; }
