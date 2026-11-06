@@ -13,3 +13,10 @@ Vale's assets and navigation are scoped under `vale/` for this GitHub Pages proj
 This repository contains only publication-ready example assets, not private planning or company source documents. It does not establish production/client readiness, clinical approval, accessibility conformance, finalized service pricing or asset/trademark exclusivity.
 
 To preview locally: `python3 -m http.server 7376 --bind 127.0.0.1`. GitHub Pages publishes the root of `main`; a push to that branch changes the public examples. Review intended public files before pushing. No custom domain or paid service is configured.
+
+
+## Technology full website design mocks — November 6, 2026
+
+Three fictional, complete marketing journeys now extend the previous direction preview: Threadline (workflow SaaS), Northstar IT (managed services), and Vector Harbor (developer infrastructure). Each has five distinct content pages plus privacy. Navigation, expandable examples and FAQs work natively; enquiry endpoints are deliberately unavailable. No account, form, analytics, SDK, product backend or paid service is connected. Existing Wellness content and URLs remain unchanged apart from the Technology navigation label on the Wellness index.
+
+These are original design proposals for feedback. Northstar's original generated people photo is illustrative. Claims do not describe an operating business, certifications, measured performance or actual customer endorsements. Pricing is not published; Studio pricing remains provisional.

@@ -194,3 +194,9 @@ body.visual-edition .profile { background:transparent; border:0; padding:0; }
  .visual-edition .image-story .story-title strong { font-size:32px; }
 }
 @media(prefers-reduced-motion:reduce) { .visual-edition *, .studio-index * { transition:none!important; scroll-behavior:auto!important; } }
+
+/* Full Technology example gallery, November 6. */
+.tech-example-row{display:grid;grid-template-columns:1.3fr 1fr;gap:8%;align-items:center;padding:55px 0;border-top:1px solid var(--line)}
+.tech-example-row h2{margin:18px 0 24px}.tech-example-row p{color:var(--muted)}.tech-example-row .caption{font-size:12px;margin-top:12px}
+.tech-cover{display:block;text-decoration:none;padding:36px;overflow:hidden;min-width:0}.tech-cover .cover-brand{font-size:19px;display:block;margin-bottom:35px}.tech-cover strong{font-size:clamp(30px,3.4vw,44px);line-height:1.08;letter-spacing:-.04em;font-weight:400;display:block}.cover-ui{margin:28px 0 0;padding:16px 24px;background:#ffffffbb;border-radius:8px;font-size:12px}.cover-ui span{padding:12px 0;display:flex;gap:20px;justify-content:space-between;border-bottom:1px solid #cabddc}.cover-ui small{color:#654a80}.cover-thread{background:#e9e1f4;color:#38234d!important}.cover-north{background:#eae2d3;color:#273438!important}.cover-north strong{font-family:Georgia,serif}.cover-north img{aspect-ratio:1.8;margin-top:28px;border-radius:70px 4px 4px 4px}.cover-vector{background:#132831;color:#e7efef!important}.cover-vector .cover-brand{font-family:'Courier New',monospace}.cover-vector .cover-ui{background:#0c1d25;color:#a9e7c6;font-family:'Courier New',monospace}.cover-vector .cover-ui span{border-color:#36525d}.tech-cover:focus-visible{outline:3px solid #336785;outline-offset:6px}
+@media(max-width:700px){.tech-example-row{grid-template-columns:1fr;gap:28px;padding:36px 0}.tech-cover{padding:25px}.tech-cover strong{font-size:36px}}
