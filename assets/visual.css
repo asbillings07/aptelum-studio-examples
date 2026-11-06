@@ -71,6 +71,11 @@ body { margin:0; }
 .tech-story .line-picture { height:160px; margin:0 0 20px; background:linear-gradient(135deg,#233b54,#101b2e); display:flex; align-items:center; justify-content:center; gap:12px; }
 .line-picture span { display:block; height:65px; width:50px; border:1px solid #94b9d2; border-radius:6px; background:#6587ac33; }
 .line-picture span:nth-child(2) { height:95px; background:#7aa6d14d; }
+.line-picture.workflow span { height:48px; width:48px; border-radius:50%; position:relative; }
+.line-picture.workflow span+span:before { content:""; position:absolute; top:23px; left:-13px; width:12px; border-top:1px solid #94b9d2; }
+.line-picture.people span { height:48px; width:46px; border-radius:24px 24px 6px 6px; position:relative; margin-top:30px; }
+.line-picture.people span:before { content:""; position:absolute; width:26px; height:26px; border:1px solid #94b9d2; border-radius:50%; top:-34px; left:9px; background:#6587ac33; }
+.line-picture.people span:nth-child(2) { transform:translateY(-10px); }
 .tech-status { padding:28px 0; margin-top:60px; border-top:1px solid var(--line); color:var(--muted); }
 .studio-index .skip { position:absolute; left:12px; top:-90px; padding:12px; background:var(--paper); color:var(--ink); z-index:3; }
 .studio-index .skip:focus { top:12px; }
