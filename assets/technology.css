@@ -96,3 +96,11 @@
  .vector-harbor .hero h1{font-size:clamp(42px,9vw,60px)}.vector-harbor .hero .lead{font-size:17px}
  .pill{white-space:normal;text-align:center}.row strong{min-width:0}
 }
+/* The event labels need more room than a phone-only breakpoint provides. */
+@media(max-width:760px){
+ .vector-harbor .hero .console{grid-template-columns:1fr;padding:22px;text-align:left}
+ .vector-harbor .hero .console .window,.vector-harbor .hero .console h3{grid-column:1}
+ .vector-harbor .hero .event{border-top:0;border-left:1px solid #5d8e81;padding:0 0 28px 22px;margin-left:5px}
+ .vector-harbor .hero .event:last-child{padding-bottom:0;border-left-color:transparent}
+ .vector-harbor .hero .event:before{top:6px;left:-5px}
+}
