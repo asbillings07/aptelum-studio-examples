@@ -30,7 +30,7 @@
 .northstar .button{border-radius:30px 30px 30px 4px}
 .northstar .hero{align-items:start}
 .northstar .hero figure{padding:0 0 20px 12px;align-self:center}
-.northstar .hero figure:before{border-radius:48% 48% 44% 40%;inset:20px 10px 0 0;transform:rotate(-8deg)}
+.northstar .hero figure:before{border-radius:48% 48% 44% 40%;inset:20px 10px 0 0;transform:none}
 .northstar .hero img{border-radius:47% 47% 40% 40% / 38% 42% 35% 40%;aspect-ratio:1.05}
 .northstar .hero figcaption{border-radius:35px 5px 35px 5px;margin-top:-20px}
 .northstar .support-map{border-radius:48% 48% 18px 18px}
