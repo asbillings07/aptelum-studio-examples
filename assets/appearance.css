@@ -1,5 +1,6 @@
 /* Shared native appearance control; the brand supplies its own palette. */
 :root{color-scheme:light dark}
+#studio-practices{color-scheme:inherit}
 :root[data-color-mode="light"]{color-scheme:light}
 :root[data-color-mode="dark"]{color-scheme:dark}
 .appearance{display:inline-flex;align-items:center;gap:10px;font:13px/1.4 Arial,sans-serif;max-width:100%;color:var(--ink)}
