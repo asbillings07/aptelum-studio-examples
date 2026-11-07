@@ -1,0 +1,96 @@
+/* Shared responsive rules, scoped to this brand in its own stylesheet. */
+#studio-practices .morrow main>*,#studio-practices .morrow .visual-hero>*,#studio-practices .morrow .detail-top>*,#studio-practices .morrow .profile>*,#studio-practices .morrow .visit-grid>*,#studio-practices .morrow .band>*{min-width:0}
+#studio-practices .morrow .action{max-width:100%;text-decoration:none}
+#studio-practices .morrow .text-link{text-decoration:underline;text-underline-offset:5px}
+#studio-practices .morrow .practice-header{gap:18px}
+#studio-practices .morrow .practice-header>.nav{margin-left:auto}
+#studio-practices .morrow .header-book{flex-shrink:0;max-width:100%}
+#studio-practices .morrow .booking-preview{max-width:100%}
+#studio-practices .morrow .preview-note{max-width:360px}
+#studio-practices .morrow .band .booking-preview{flex-shrink:0;max-width:360px}
+#studio-practices .morrow .band>.action{flex-shrink:0}
+#studio-practices .morrow .visual-card:hover img{transform:none}
+#studio-practices .morrow .visual-card:focus-visible,#studio-practices .morrow a:focus-visible,#studio-practices .morrow summary:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
+#studio-practices .morrow .visual-cards{display:block}
+#studio-practices .morrow .care-copy>*+*{margin-top:16px}
+#studio-practices .morrow .care-copy .card-cta{margin-top:18px}
+#studio-practices .morrow .section-intro{gap:35px}
+#studio-practices .morrow .image-story .story-title strong{font-size:clamp(30px,3.3vw,44px)}
+#studio-practices .morrow .columns{grid-template-columns:1fr;gap:0;counter-reset:consideration}
+#studio-practices .morrow .columns>div{display:grid;grid-template-columns:38px minmax(0,.85fr) minmax(0,1.4fr);gap:22px;padding:26px 0;border-top:1px solid var(--line);align-items:start;counter-increment:consideration}
+#studio-practices .morrow .columns>div:before{content:'0' counter(consideration);font-size:12px;color:var(--muted);line-height:2}
+#studio-practices .morrow .columns h3{margin:0}
+@media(max-width:1080px){
+ #studio-practices .morrow .practice-header>.nav{display:none}
+ #studio-practices .morrow .menu{display:block;margin-left:auto}
+ #studio-practices .morrow .menu[open]{order:4;flex-basis:100%;margin:0}
+ #studio-practices .morrow .menu .nav{margin-top:14px;margin-left:0;justify-content:flex-start}
+ #studio-practices .morrow .header-book{flex-basis:auto}
+ #studio-practices .morrow .header-book .action{width:auto}
+}
+@media(max-width:900px){
+ #studio-practices .morrow main .visual-hero,#studio-practices .morrow .detail-top,#studio-practices .morrow .visit-grid,#studio-practices .morrow .split-note{grid-template-columns:minmax(0,1fr);gap:35px}
+ #studio-practices .morrow .visual-hero .stack{max-width:680px}
+ #studio-practices .morrow .visual-hero figure{order:0}
+ #studio-practices .morrow .visual-hero h1{max-width:17ch}
+ #studio-practices .morrow .section-intro{flex-direction:column;align-items:flex-start;gap:20px}
+ #studio-practices .morrow .band{flex-direction:column;align-items:flex-start;gap:25px}
+ #studio-practices .morrow .image-story summary{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:25px}
+ #studio-practices .morrow .image-story .story-title{padding:26px}
+ #studio-practices .morrow .image-story .story-title strong{font-size:32px}
+ #studio-practices .morrow .photo-break{gap:30px}
+ #studio-practices .morrow .detail-aside{max-width:680px}
+ #studio-practices .morrow .detail-aside>img{max-height:320px;object-fit:cover}
+}
+@media(max-width:600px){
+ #studio-practices .morrow .practice-header{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px}
+ #studio-practices .morrow .header-book{grid-column:1/-1;justify-self:start;width:auto}
+ #studio-practices .morrow .menu{margin:0;justify-self:end}
+ #studio-practices .morrow .menu[open]{grid-column:1/-1;grid-row:3;justify-self:stretch}
+ #studio-practices .morrow .menu[open]>summary{width:max-content;margin-left:auto}
+ #studio-practices .morrow .booking-preview{width:auto}
+ #studio-practices .morrow .brand strong{font-size:29px}
+ #studio-practices .morrow .brand small{font-size:10px}
+ #studio-practices .morrow .image-story summary{grid-template-columns:1fr;gap:0}
+ #studio-practices .morrow .columns>div{grid-template-columns:28px minmax(0,1fr);gap:12px}
+ #studio-practices .morrow .columns p{grid-column:2}
+ #studio-practices .morrow .band .booking-preview{width:100%}
+ #studio-practices .morrow .practice-footer .nav{gap:6px}
+ #studio-practices .morrow .lead{font-size:18px}
+}
+@media(prefers-reduced-motion:reduce){#studio-practices .morrow *,#studio-practices .morrow *:before{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+/* Morrow: open, organic and unhurried; full-width alternating care paths. */
+#studio-practices .morrow .action{border-radius:999px;padding:14px 26px}
+#studio-practices .morrow main .visual-hero{grid-template-columns:1fr;gap:40px;text-align:center}
+#studio-practices .morrow .visual-hero .stack{align-items:center;margin:auto;max-width:830px}
+#studio-practices .morrow .visual-hero h1{font-size:clamp(40px,5.6vw,76px);max-width:17ch}
+#studio-practices .morrow .visual-hero .lead{max-width:37em}
+#studio-practices .morrow .visual-hero .actions{justify-content:center}
+#studio-practices .morrow .visual-hero figure{width:100%;max-width:1000px;margin:auto}
+#studio-practices .morrow .visual-hero img{aspect-ratio:2.35;max-height:440px;border-radius:150px 45px 140px 45px;object-position:center 48%}
+#studio-practices .morrow .image-story{max-width:950px;margin-left:auto;margin-right:auto;border-radius:85px 24px 85px 24px;padding:26px}
+#studio-practices .morrow .image-story summary{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:35px}
+#studio-practices .morrow .image-story img{border-radius:46% 46% 38% 42%;aspect-ratio:1.1}
+#studio-practices .morrow .image-story .story-title{padding:20px 20px 20px 0}
+#studio-practices .morrow .visual-card,#studio-practices .morrow .offer-grid>.offer{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);align-items:center;gap:9%;padding:42px 0;border:0;background:transparent}
+#studio-practices .morrow .visual-card:nth-child(even),#studio-practices .morrow .offer-grid>.offer:nth-child(even){grid-template-columns:minmax(0,1fr) minmax(0,1.1fr)}
+#studio-practices .morrow .visual-card:nth-child(even)>figure,#studio-practices .morrow .offer-grid>.offer:nth-child(even)>img{order:2}
+#studio-practices .morrow .visual-card figure{margin:0;border-radius:45% 45% 35px 35px}
+#studio-practices .morrow .visual-card img,#studio-practices .morrow .offer-grid>.offer>img{aspect-ratio:1.45;max-height:350px;width:100%;object-fit:cover;border-radius:45% 45% 35px 35px}
+#studio-practices .morrow .visual-card:nth-child(2)>figure,#studio-practices .morrow .visual-card:nth-child(2) img,#studio-practices .morrow .offer-grid>.offer:nth-child(2)>img{border-radius:45% 32% 42% 30%}
+#studio-practices .morrow .visual-card:nth-child(3)>figure,#studio-practices .morrow .visual-card:nth-child(3) img,#studio-practices .morrow .offer-grid>.offer:nth-child(3)>img{border-radius:35px 100px 35px 100px}
+#studio-practices .morrow .care-copy h3{font:clamp(28px,3vw,39px)/1.15 Georgia,serif;max-width:15ch}
+#studio-practices .morrow .care-copy p:not(.eyebrow){max-width:29em;font-size:17px;line-height:1.75}
+#studio-practices .morrow .offer-grid{display:block}
+#studio-practices .morrow .band{border-radius:80px 20px 80px 20px;padding:42px}
+#studio-practices .morrow .detail-aside{border-radius:50px 12px 50px 12px;padding:30px}
+#studio-practices .morrow .detail-aside>img{border-radius:40px 10px 40px 10px}
+#studio-practices .morrow .columns{grid-template-columns:1fr 1fr;gap:22px}
+#studio-practices .morrow .columns>div{display:block;border:0;padding:32px;background:var(--panel);border-radius:45px}
+#studio-practices .morrow .columns>div:first-child{grid-column:1/-1;border-radius:55px 18px 55px 18px}
+#studio-practices .morrow .columns>div:before{display:block;margin-bottom:14px}
+#studio-practices .morrow .columns h3{margin:0 0 16px}
+#studio-practices .morrow .photo-break img{border-radius:40px 100px 40px 100px}
+@media(max-width:900px){#studio-practices .morrow .visual-hero img{aspect-ratio:1.9;border-radius:100px 30px 95px 30px}#studio-practices .morrow .image-story{padding:24px;border-radius:55px 20px 55px 20px}#studio-practices .morrow .image-story summary{grid-template-columns:1fr 1fr;gap:25px}#studio-practices .morrow .image-story .story-title{padding:10px 0}#studio-practices .morrow .visual-card,#studio-practices .morrow .offer-grid>.offer{gap:6%}}
+@media(max-width:700px){#studio-practices .morrow .visual-card,#studio-practices .morrow .visual-card:nth-child(even),#studio-practices .morrow .offer-grid>.offer,#studio-practices .morrow .offer-grid>.offer:nth-child(even){grid-template-columns:1fr;gap:25px;padding:30px 0}#studio-practices .morrow .visual-card:nth-child(even)>figure,#studio-practices .morrow .offer-grid>.offer:nth-child(even)>img{order:0}#studio-practices .morrow .care-copy{max-width:560px}#studio-practices .morrow .columns{grid-template-columns:1fr}#studio-practices .morrow .columns>div:first-child{grid-column:auto}}
+@media(max-width:600px){#studio-practices .morrow .visual-hero img{aspect-ratio:1.5;border-radius:65px 22px 65px 22px}#studio-practices .morrow .visual-hero .actions{flex-direction:column;align-items:stretch}#studio-practices .morrow .image-story summary{grid-template-columns:1fr;gap:25px}#studio-practices .morrow .image-story .story-title{padding:0}#studio-practices .morrow .image-story img{aspect-ratio:1.4}#studio-practices .morrow .band{border-radius:45px 15px 45px 15px;padding:28px}#studio-practices .morrow .detail-aside{padding:24px}#studio-practices .morrow .visual-card img{aspect-ratio:1.6}}

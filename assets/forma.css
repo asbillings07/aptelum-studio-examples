@@ -1,0 +1,94 @@
+/* Shared responsive rules, scoped to this brand in its own stylesheet. */
+#studio-practices .forma main>*,#studio-practices .forma .visual-hero>*,#studio-practices .forma .detail-top>*,#studio-practices .forma .profile>*,#studio-practices .forma .visit-grid>*,#studio-practices .forma .band>*{min-width:0}
+#studio-practices .forma .action{max-width:100%;text-decoration:none}
+#studio-practices .forma .text-link{text-decoration:underline;text-underline-offset:5px}
+#studio-practices .forma .practice-header{gap:18px}
+#studio-practices .forma .practice-header>.nav{margin-left:auto}
+#studio-practices .forma .header-book{flex-shrink:0;max-width:100%}
+#studio-practices .forma .booking-preview{max-width:100%}
+#studio-practices .forma .preview-note{max-width:360px}
+#studio-practices .forma .band .booking-preview{flex-shrink:0;max-width:360px}
+#studio-practices .forma .band>.action{flex-shrink:0}
+#studio-practices .forma .visual-card:hover img{transform:none}
+#studio-practices .forma .visual-card:focus-visible,#studio-practices .forma a:focus-visible,#studio-practices .forma summary:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
+#studio-practices .forma .visual-cards{display:block}
+#studio-practices .forma .care-copy>*+*{margin-top:16px}
+#studio-practices .forma .care-copy .card-cta{margin-top:18px}
+#studio-practices .forma .section-intro{gap:35px}
+#studio-practices .forma .image-story .story-title strong{font-size:clamp(30px,3.3vw,44px)}
+#studio-practices .forma .columns{grid-template-columns:1fr;gap:0;counter-reset:consideration}
+#studio-practices .forma .columns>div{display:grid;grid-template-columns:38px minmax(0,.85fr) minmax(0,1.4fr);gap:22px;padding:26px 0;border-top:1px solid var(--line);align-items:start;counter-increment:consideration}
+#studio-practices .forma .columns>div:before{content:'0' counter(consideration);font-size:12px;color:var(--muted);line-height:2}
+#studio-practices .forma .columns h3{margin:0}
+@media(max-width:1080px){
+ #studio-practices .forma .practice-header>.nav{display:none}
+ #studio-practices .forma .menu{display:block;margin-left:auto}
+ #studio-practices .forma .menu[open]{order:4;flex-basis:100%;margin:0}
+ #studio-practices .forma .menu .nav{margin-top:14px;margin-left:0;justify-content:flex-start}
+ #studio-practices .forma .header-book{flex-basis:auto}
+ #studio-practices .forma .header-book .action{width:auto}
+}
+@media(max-width:900px){
+ #studio-practices .forma main .visual-hero,#studio-practices .forma .detail-top,#studio-practices .forma .visit-grid,#studio-practices .forma .split-note{grid-template-columns:minmax(0,1fr);gap:35px}
+ #studio-practices .forma .visual-hero .stack{max-width:680px}
+ #studio-practices .forma .visual-hero figure{order:0}
+ #studio-practices .forma .visual-hero h1{max-width:17ch}
+ #studio-practices .forma .section-intro{flex-direction:column;align-items:flex-start;gap:20px}
+ #studio-practices .forma .band{flex-direction:column;align-items:flex-start;gap:25px}
+ #studio-practices .forma .image-story summary{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:25px}
+ #studio-practices .forma .image-story .story-title{padding:26px}
+ #studio-practices .forma .image-story .story-title strong{font-size:32px}
+ #studio-practices .forma .photo-break{gap:30px}
+ #studio-practices .forma .detail-aside{max-width:680px}
+ #studio-practices .forma .detail-aside>img{max-height:320px;object-fit:cover}
+}
+@media(max-width:600px){
+ #studio-practices .forma .practice-header{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px}
+ #studio-practices .forma .header-book{grid-column:1/-1;justify-self:start;width:auto}
+ #studio-practices .forma .menu{margin:0;justify-self:end}
+ #studio-practices .forma .menu[open]{grid-column:1/-1;grid-row:3;justify-self:stretch}
+ #studio-practices .forma .menu[open]>summary{width:max-content;margin-left:auto}
+ #studio-practices .forma .booking-preview{width:auto}
+ #studio-practices .forma .brand strong{font-size:29px}
+ #studio-practices .forma .brand small{font-size:10px}
+ #studio-practices .forma .image-story summary{grid-template-columns:1fr;gap:0}
+ #studio-practices .forma .columns>div{grid-template-columns:28px minmax(0,1fr);gap:12px}
+ #studio-practices .forma .columns p{grid-column:2}
+ #studio-practices .forma .band .booking-preview{width:100%}
+ #studio-practices .forma .practice-footer .nav{gap:6px}
+ #studio-practices .forma .lead{font-size:18px}
+}
+@media(prefers-reduced-motion:reduce){#studio-practices .forma *,#studio-practices .forma *:before{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+/* Forma: composed, provider-led editorial design. Precise lines, restrained curves. */
+#studio-practices .forma .action{border-radius:6px;padding:13px 24px}
+#studio-practices .forma main .visual-hero{grid-template-columns:minmax(0,1.35fr) minmax(0,.8fr);gap:9%}
+#studio-practices .forma .visual-hero figure{width:100%;max-width:340px;padding:18px 18px 0;background:var(--panel);border-radius:70px 7px 7px 7px}
+#studio-practices .forma .visual-hero img{aspect-ratio:4/4.4;border-radius:56px 4px 4px 4px;object-position:center 25%}
+#studio-practices .forma .visual-hero figcaption{font-size:11px;line-height:1.6;padding:18px 0;max-width:28em}
+#studio-practices .forma .image-story{background:transparent;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:35px 0}
+#studio-practices .forma .image-story summary{grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:9%}
+#studio-practices .forma .image-story img{order:2;aspect-ratio:1.65;border-radius:5px}
+#studio-practices .forma .image-story .story-title{padding:20px 0}
+#studio-practices .forma .story-copy{padding:28px 0 0;max-width:720px}
+#studio-practices .forma .visual-cards{counter-reset:care}
+#studio-practices .forma .visual-card{display:grid;grid-template-columns:38px minmax(140px,.55fr) minmax(0,1.45fr);align-items:center;gap:38px;padding:34px 0;border-top:1px solid var(--line);counter-increment:care}
+#studio-practices .forma .visual-card:last-child{border-bottom:1px solid var(--line)}
+#studio-practices .forma .visual-card:before{content:'0' counter(care);font-size:12px;color:var(--muted);align-self:start;padding-top:4px}
+#studio-practices .forma .visual-card figure{margin:0;border-radius:6px;max-width:280px}
+#studio-practices .forma .visual-card img{aspect-ratio:1.35}
+#studio-practices .forma .care-copy{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:32px;align-items:start}
+#studio-practices .forma .care-copy .eyebrow{grid-column:1/-1;font-size:11px}
+#studio-practices .forma .care-copy h3{font-size:27px;max-width:14ch}
+#studio-practices .forma .care-copy p:not(.eyebrow){grid-column:2;grid-row:2/4;line-height:1.7}
+#studio-practices .forma .care-copy .card-cta{grid-column:1;font-size:14px}
+#studio-practices .forma .service-row{grid-template-columns:150px minmax(0,1fr) auto;gap:32px;padding:34px 0}
+#studio-practices .forma .service-row>img{aspect-ratio:1.4;border-radius:6px}
+#studio-practices .forma .profile{padding:30px 0;border:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:transparent}
+#studio-practices .forma .profile img{border-radius:55px 5px 5px 5px}
+#studio-practices .forma .detail-aside{border-radius:7px;border-top:3px solid var(--accent)}
+#studio-practices .forma .band{background:var(--accent);color:var(--on-accent);border-radius:7px;padding:40px}
+#studio-practices .forma .band>.action,#studio-practices .forma .band .action{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+#studio-practices .forma .band a:focus-visible,#studio-practices .forma .band summary:focus-visible{outline-color:var(--paper)}
+@media(max-width:1000px){#studio-practices .forma .care-copy{display:block}#studio-practices .forma .visual-card{grid-template-columns:25px minmax(150px,.65fr) minmax(0,1fr);gap:25px}}
+@media(max-width:900px){#studio-practices .forma main .visual-hero{grid-template-columns:1fr;gap:35px}#studio-practices .forma .visual-hero figure{max-width:300px;justify-self:center}#studio-practices .forma .service-row{grid-template-columns:130px minmax(0,1fr);gap:24px}#studio-practices .forma .service-row>.text-link{grid-column:2;padding-left:0}}
+@media(max-width:600px){#studio-practices .forma .visual-card{grid-template-columns:26px minmax(0,1fr);gap:16px;padding:28px 0}#studio-practices .forma .visual-card figure{grid-column:2;max-width:none}#studio-practices .forma .visual-card img{aspect-ratio:1.75}#studio-practices .forma .care-copy{grid-column:2}#studio-practices .forma .care-copy h3{max-width:none}#studio-practices .forma .image-story summary{grid-template-columns:1fr;gap:22px}#studio-practices .forma .image-story img{order:0}#studio-practices .forma .image-story .story-title{padding:0}#studio-practices .forma .service-row{grid-template-columns:80px minmax(0,1fr);gap:18px}#studio-practices .forma .service-row>img{aspect-ratio:1}#studio-practices .forma .band{padding:28px}}

@@ -1,0 +1,46 @@
+/* Vale: soft arcs, an asymmetric care gallery, and comfortable intermediate widths. */
+body.vale-story main>*,body.vale-story .visual-hero>*,body.vale-story .visual-card>*,body.vale-story .profile>*,body.vale-story .consultation-grid>*,body.vale-story .band>*{min-width:0}
+body.vale-story .action,body.vale-story .handoff a{border-radius:999px;max-width:100%}
+body.vale-story .mobile-menu summary{border-radius:24px}
+body.vale-story main .visual-hero{grid-template-columns:1.12fr 1fr;gap:7%}
+body.vale-story .visual-hero img{aspect-ratio:1.1;border-radius:160px 32px 130px 32px}
+body.vale-story .visual-hero h1{max-width:17ch}
+body.vale-story .visual-cards{grid-template-columns:1.08fr 1fr;gap:34px 50px}
+body.vale-story .visual-card{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1fr);column-gap:24px;row-gap:12px;align-content:start}
+body.vale-story .visual-card>figure{grid-column:1;grid-row:1/5;margin:0}
+body.vale-story .visual-card>figure img{aspect-ratio:.8;border-radius:60px 18px 60px 18px}
+body.vale-story .visual-card>:not(figure){grid-column:2}
+body.vale-story .visual-card:first-child{grid-row:1/3;display:flex;gap:15px}
+body.vale-story .visual-card:first-child>figure{margin-bottom:6px}
+body.vale-story .visual-card:first-child>figure img{aspect-ratio:1.65;border-radius:24px 90px 24px 90px}
+body.vale-story .visual-card .card-cta{margin-top:0;padding-top:0}
+body.vale-story .visual-card:hover img{transform:none}
+body.vale-story .image-story{padding:30px;border-radius:90px 24px 90px 24px}
+body.vale-story .image-story summary{grid-template-columns:1.1fr 1fr;gap:7%}
+body.vale-story .image-story img{border-radius:70px 20px 70px 20px;aspect-ratio:1.35}
+body.vale-story .image-story .story-title{padding:20px 18px 20px 0}
+body.vale-story .image-story .story-title strong{font-size:clamp(30px,3.2vw,42px)}
+body.vale-story .profile{grid-template-columns:minmax(0,280px) minmax(0,1fr);gap:6%;border:0;background:transparent;padding:0}
+body.vale-story .profile figure{width:100%;max-width:280px}
+body.vale-story .profile img{border-radius:140px 140px 26px 26px}
+body.vale-story .band{border-radius:65px 20px 65px 20px;padding:40px}
+body.vale-story .band>.action{flex-shrink:0}
+body.vale-story .offer-grid{display:block}
+body.vale-story .offer{display:grid;grid-template-columns:minmax(0,.65fr) minmax(0,1fr);column-gap:6%;row-gap:15px;padding:36px 0;border-bottom:1px solid var(--line)}
+body.vale-story .offer>img{grid-row:1/4;aspect-ratio:1.65;border-radius:90px 24px 90px 24px}
+body.vale-story .offer>:not(img){grid-column:2}
+body.vale-story .offer .text-link{margin:0;justify-self:start}
+body.vale-story .offer h2{font-size:clamp(27px,3vw,35px)}
+body.vale-story .detail-top img,body.vale-story .photo-break img{border-radius:75px 20px 75px 20px}
+body.vale-story .columns{grid-template-columns:minmax(0,1fr);gap:0;counter-reset:care}
+body.vale-story .columns>div{counter-increment:care;display:grid;grid-template-columns:32px minmax(0,.8fr) minmax(0,1.3fr);gap:24px;padding:26px 0;border-top:1px solid var(--line)}
+body.vale-story .columns>div:before{content:'0' counter(care);font-size:12px;color:var(--muted);line-height:2}
+body.vale-story .columns h3{margin:0}
+body.vale-story .request-panel{border-radius:45px 18px 45px 18px}
+body.vale-story a:focus-visible,body.vale-story summary:focus-visible{outline:3px solid var(--ink);outline-offset:5px}
+@media(max-width:1080px){body.vale-story .desktop-nav{display:none}body.vale-story .mobile-menu{display:block;margin-left:auto}body.vale-story .mobile-menu[open]{order:4;flex-basis:100%;margin-left:0}body.vale-story .header-action{flex-basis:auto}body.vale-story .section-intro{flex-direction:column;align-items:start;gap:20px}}
+@media(max-width:1000px){body.vale-story .visual-cards{grid-template-columns:1fr;gap:35px}body.vale-story .visual-card,body.vale-story .visual-card:first-child{display:grid;grid-template-columns:minmax(0,.65fr) minmax(0,1fr);column-gap:30px;row-gap:12px;grid-row:auto}body.vale-story .visual-card>figure,body.vale-story .visual-card:first-child>figure{margin:0;grid-row:1/5}body.vale-story .visual-card>figure img,body.vale-story .visual-card:first-child>figure img{aspect-ratio:1.3;border-radius:60px 20px 60px 20px}}
+@media(max-width:900px){body.vale-story main .visual-hero,body.vale-story .detail-top,body.vale-story .consultation-grid{grid-template-columns:minmax(0,1fr);gap:35px}body.vale-story .visual-hero figure{order:0;max-width:650px;width:100%}body.vale-story .visual-hero img{aspect-ratio:1.65}body.vale-story .visual-hero .stack{max-width:680px}body.vale-story .image-story summary{grid-template-columns:1fr 1fr;gap:25px}body.vale-story .image-story .story-title{padding:0}body.vale-story .image-story .story-title strong{font-size:32px}body.vale-story .band{flex-direction:column;align-items:start;gap:25px}body.vale-story .detail-top figure{max-width:650px;width:100%}body.vale-story .detail-top img{max-height:320px;aspect-ratio:1.8}}
+@media(max-width:700px){body.vale-story .profile{grid-template-columns:minmax(0,1fr);gap:28px}body.vale-story .profile figure{max-width:260px;justify-self:center}body.vale-story .photo-break{grid-template-columns:1fr;gap:24px}body.vale-story .image-story summary{grid-template-columns:1fr;gap:28px}body.vale-story .image-story img{aspect-ratio:1.65}body.vale-story .offer{grid-template-columns:minmax(0,.7fr) minmax(0,1fr);gap:18px}body.vale-story .offer>img{aspect-ratio:1}}
+@media(max-width:600px){body.vale-story .site-header{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px}body.vale-story .header-action{grid-column:1/-1;justify-self:start;width:auto;order:0}body.vale-story .mobile-menu{margin:0;justify-self:end}body.vale-story .mobile-menu[open]{grid-column:1/-1;grid-row:3;justify-self:stretch}body.vale-story .mobile-menu[open]>summary{width:max-content;margin-left:auto}body.vale-story .brand strong{font-size:34px}body.vale-story .visual-hero img{border-radius:80px 20px 70px 20px;aspect-ratio:1.4}body.vale-story .visual-hero .actions{gap:12px}body.vale-story .visual-card,body.vale-story .visual-card:first-child{display:flex;gap:14px}body.vale-story .visual-card>figure img,body.vale-story .visual-card:first-child>figure img{aspect-ratio:1.6}body.vale-story .image-story{padding:25px;border-radius:55px 18px 55px 18px}body.vale-story .image-story img{border-radius:45px 18px 45px 18px}body.vale-story .band{padding:28px;border-radius:45px 18px 45px 18px}body.vale-story .offer{grid-template-columns:1fr;gap:18px}body.vale-story .offer>img{grid-row:auto;aspect-ratio:1.6}body.vale-story .offer>:not(img){grid-column:auto}body.vale-story .columns>div{grid-template-columns:24px minmax(0,1fr);gap:12px}body.vale-story .columns p{grid-column:2}body.vale-story .request-panel{padding:25px}body.vale-story .photo-break figcaption{font-size:20px}}
+@media(prefers-reduced-motion:reduce){body.vale-story *,body.vale-story *:before,body.vale-story *:after{animation:none!important;transition:none!important}}
