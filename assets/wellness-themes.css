@@ -1,0 +1,10 @@
+/* Forma cool slate; Morrow soft sage. Photos retain their original colors. */
+#studio-practices .forma.visual-edition{--ink:#272f37;--muted:#52606a;--paper:#f8f8f5;--panel:#e6ebed;--practice-surface:#ffffff;--line:#cbd1d4;--accent:#2a4055;--on-accent:#ffffff;}
+#studio-practices .morrow.visual-edition{--ink:#2b4237;--muted:#526459;--paper:#f5f7ef;--panel:#e6edde;--practice-surface:#fcfdf9;--line:#c6d1bd;--accent:#324d3c;--on-accent:#ffffff;}
+@media(prefers-color-scheme:dark){
+html:not([data-color-mode="light"]) #studio-practices .forma.visual-edition{--ink:#f1eee7;--muted:#c6c8ce;--paper:#1d2229;--panel:#303946;--practice-surface:#252d36;--line:#657080;--accent:#d7e5fa;--on-accent:#1b2b40;}
+html:not([data-color-mode="light"]) #studio-practices .morrow.visual-edition{--ink:#e7f0e5;--muted:#bdcebf;--paper:#1c2b23;--panel:#314436;--practice-surface:#27392c;--line:#647c65;--accent:#c9dfb8;--on-accent:#21301f;}
+}
+html[data-color-mode="dark"] #studio-practices .forma.visual-edition{--ink:#f1eee7;--muted:#c6c8ce;--paper:#1d2229;--panel:#303946;--practice-surface:#252d36;--line:#657080;--accent:#d7e5fa;--on-accent:#1b2b40;}
+html[data-color-mode="dark"] #studio-practices .morrow.visual-edition{--ink:#e7f0e5;--muted:#bdcebf;--paper:#1c2b23;--panel:#314436;--practice-surface:#27392c;--line:#647c65;--accent:#c9dfb8;--on-accent:#21301f;}
+#studio-practices .forma .visual-hero figure{background:var(--panel)}

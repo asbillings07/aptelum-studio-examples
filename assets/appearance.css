@@ -1,0 +1,13 @@
+/* Shared native appearance control; the brand supplies its own palette. */
+:root{color-scheme:light dark}
+:root[data-color-mode="light"]{color-scheme:light}
+:root[data-color-mode="dark"]{color-scheme:dark}
+.appearance{display:inline-flex;align-items:center;gap:10px;font:13px/1.4 Arial,sans-serif;max-width:100%;color:var(--ink)}
+.appearance[hidden]{display:none}
+.appearance select{font:inherit;color:var(--ink);background:var(--practice-surface,var(--surface));border:1px solid var(--muted);border-radius:8px;padding:9px 30px 9px 12px;min-height:44px;max-width:100%;cursor:pointer}
+.appearance select:focus-visible{outline:3px solid var(--ink);outline-offset:4px}
+#studio-practices .forma .appearance select{border-radius:6px}
+#studio-practices .morrow .appearance select,body.vale-story .appearance select{border-radius:24px}
+#studio-practices .fiction-note,body.vale-story .example-note{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px 24px}
+body.vale-story{background:var(--paper)}
+@media(max-width:600px){#studio-practices .fiction-note,body.vale-story .example-note{align-items:flex-start;gap:12px}.appearance{flex-basis:100%}}
