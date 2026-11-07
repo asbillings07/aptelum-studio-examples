@@ -13,11 +13,6 @@ html[data-color-mode="dark"] body.vector-harbor{color-scheme:dark;--paper:#0d181
 
 .example{align-items:center;gap:12px 24px}
 .example>a{margin-left:auto}
-.appearance{display:flex;align-items:center;gap:10px;font-size:12px;letter-spacing:0;flex-shrink:0}
-.appearance[hidden]{display:none}
-.appearance select{font:inherit;color:var(--ink);background:var(--paper);border:1px solid var(--muted);min-height:44px;padding:8px 28px 8px 12px;max-width:100%;cursor:pointer;border-radius:8px}
-.threadline .appearance select{border-radius:24px}.northstar .appearance select{border-radius:20px 20px 20px 4px}.vector-harbor .appearance select{border-radius:3px}
-.appearance select:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
 .threadline .visual.workboard{background:var(--soft)}
 .threadline .workboard .board{background:var(--surface);border-color:var(--line)}
 .threadline .workboard .board .pill{background:var(--soft);color:var(--ink)}
@@ -42,8 +37,6 @@ html[data-color-mode="dark"] body.vector-harbor{color-scheme:dark;--paper:#0d181
 .vector-harbor .architecture .node{background:var(--node);border-color:var(--muted)}
 .vector-harbor .architecture .node.wide{background:var(--node-wide);color:var(--node-ink)}
 .vector-harbor .cta{background:linear-gradient(120deg,var(--soft),var(--console))}
-@media(max-width:700px){.example>a{margin-left:0}.appearance{margin-left:auto}.example>span{flex-basis:100%}}
-@media(max-width:400px){.example>a{flex-basis:100%}.appearance{margin-left:0}}
 
 html{color-scheme:light}
 @media(prefers-color-scheme:dark){html:not([data-color-mode="light"]){color-scheme:dark}}

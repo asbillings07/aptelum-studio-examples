@@ -1,14 +1,37 @@
-/* Shared native appearance control; the brand supplies its own palette. */
+/* Quiet, shared controls; palettes and business actions remain brand-owned. */
 :root{color-scheme:light dark}
 #studio-practices{color-scheme:inherit}
 :root[data-color-mode="light"]{color-scheme:light}
 :root[data-color-mode="dark"]{color-scheme:dark}
-.appearance{display:inline-flex;align-items:center;gap:10px;font:13px/1.4 Arial,sans-serif;max-width:100%;color:var(--ink)}
-.appearance[hidden]{display:none}
-.appearance select{font:inherit;color:var(--ink);background:var(--practice-surface,var(--surface));border:1px solid var(--muted);border-radius:8px;padding:9px 30px 9px 12px;min-height:44px;max-width:100%;cursor:pointer}
-.appearance select:focus-visible{outline:3px solid var(--ink);outline-offset:4px}
-#studio-practices .forma .appearance select{border-radius:6px}
-#studio-practices .morrow .appearance select,body.vale-story .appearance select{border-radius:24px}
-#studio-practices .fiction-note,body.vale-story .example-note{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px 24px}
+.appearance{position:relative;display:inline-flex;align-items:center;gap:4px;flex:0 0 auto;margin-left:auto;max-width:100%;color:var(--ink);font:13px/1.4 Arial,sans-serif;letter-spacing:0}
+.appearance[hidden],.appearance [hidden]{display:none}
+.appearance button,.appearance summary{position:relative;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;width:32px;min-width:32px;height:32px;min-height:32px;padding:0;border:0;border-radius:5px;background:transparent;color:var(--muted);font:inherit;cursor:pointer;list-style:none}
+.appearance summary::-webkit-details-marker{display:none}
+.appearance svg{display:block;width:14px;height:14px;flex-shrink:0}
+.appearance button:hover,.appearance summary:hover,.appearance button[aria-pressed="true"]{color:var(--ink)}
+.appearance button:focus-visible,.appearance summary:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.appearance-inline button[aria-pressed="true"]:after{content:"";position:absolute;width:3px;height:3px;border-radius:50%;background:currentColor;bottom:1px;left:calc(50% - 1.5px)}
+.appearance-menu{display:block;z-index:10}
+.appearance-menu:not([open]) .appearance-panel{display:none}
+.appearance-panel{position:absolute;z-index:10;top:calc(100% + 8px);right:0;width:210px;max-width:calc(100vw - 32px);padding:12px;background:var(--surface,var(--paper));border:1px solid var(--line);border-radius:20px;box-shadow:0 12px 32px #0002;text-align:left}
+.appearance-panel>p{margin:2px 8px 8px;font:12px/1.4 Arial,sans-serif;color:var(--muted)}
+.appearance-panel button{display:flex;justify-content:flex-start;width:100%;height:auto;min-height:46px;gap:12px;padding:10px 8px;text-align:left;border-radius:9px}
+.appearance-panel button>span:not(.appearance-check){flex:1}
+.appearance-panel small{display:block;margin-top:2px;font-size:11px;color:var(--muted)}
+.appearance-panel button:hover{background:var(--soft,var(--panel))}
+.appearance-check{visibility:hidden;font-size:13px}
+.appearance-panel button[aria-pressed="true"] .appearance-check{visibility:visible}
+.vector-harbor .appearance-panel{border-radius:6px}
+#studio-practices .fiction-note,body.vale-story .example-note,.example{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px 20px}
 body.vale-story{background:var(--paper)}
-@media(max-width:600px){#studio-practices .fiction-note,body.vale-story .example-note{align-items:flex-start;gap:12px}.appearance{flex-basis:100%}}
+/* Consultation remains easy to find while the opening earns attention. */
+#studio-practices .header-consultation,body.vale-story .header-consultation{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:6px 0;background:transparent;border:0;color:var(--ink);font:14px/1.4 Arial,sans-serif;text-decoration:none;white-space:nowrap}
+#studio-practices .header-consultation:hover,body.vale-story .header-consultation:hover{text-decoration:underline;text-underline-offset:5px}
+#studio-practices .header-consultation:focus-visible,body.vale-story .header-consultation:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
+#studio-practices .visual-hero .actions,body.vale-story .visual-hero .actions{align-items:flex-start}
+#studio-practices .morrow .visual-hero .actions{align-items:center}
+#studio-practices .visual-hero .actions .text-link,body.vale-story .visual-hero .actions .text-link{font-size:15px;min-height:44px;display:inline-flex;align-items:center}
+#studio-practices .band>.action,body.vale-story .band>.action{font-size:14px;padding:12px 18px;min-height:44px;width:auto;max-width:100%;background:transparent;color:var(--ink);border:1px solid var(--muted)}
+@media(pointer:coarse){.appearance button,.appearance summary{width:44px;min-width:44px;height:44px;min-height:44px}.appearance-panel button{width:100%;height:auto;min-height:46px}}
+@media(max-width:700px){.example>span{flex-basis:100%}.example>a{margin-left:0;flex-basis:auto}.example .appearance{margin-left:auto}}
+@media(max-width:600px){#studio-practices .fiction-note>span:first-child,body.vale-story .example-note>span:first-child{flex-basis:100%}#studio-practices .fiction-note .appearance,body.vale-story .example-note .appearance{margin-left:auto;flex-basis:auto}#studio-practices .practice-header,body.vale-story .site-header{grid-template-columns:minmax(0,1fr) auto;gap:10px 18px}#studio-practices .header-consultation,body.vale-story .header-consultation{grid-column:1/-1;justify-self:start;width:auto;padding:0}body.vale-story .example-note{gap:8px}}
