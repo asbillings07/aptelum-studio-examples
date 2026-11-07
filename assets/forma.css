@@ -92,3 +92,7 @@
 @media(max-width:1000px){#studio-practices .forma .care-copy{display:block}#studio-practices .forma .visual-card{grid-template-columns:25px minmax(150px,.65fr) minmax(0,1fr);gap:25px}}
 @media(max-width:900px){#studio-practices .forma main .visual-hero{grid-template-columns:1fr;gap:35px}#studio-practices .forma .visual-hero figure{max-width:300px;justify-self:center}#studio-practices .forma .service-row{grid-template-columns:130px minmax(0,1fr);gap:24px}#studio-practices .forma .service-row>.text-link{grid-column:2;padding-left:0}}
 @media(max-width:600px){#studio-practices .forma .visual-card{grid-template-columns:26px minmax(0,1fr);gap:16px;padding:28px 0}#studio-practices .forma .visual-card figure{grid-column:2;max-width:none}#studio-practices .forma .visual-card img{aspect-ratio:1.75}#studio-practices .forma .care-copy{grid-column:2}#studio-practices .forma .care-copy h3{max-width:none}#studio-practices .forma .image-story summary{grid-template-columns:1fr;gap:22px}#studio-practices .forma .image-story img{order:0}#studio-practices .forma .image-story .story-title{padding:0}#studio-practices .forma .service-row{grid-template-columns:80px minmax(0,1fr);gap:18px}#studio-practices .forma .service-row>img{aspect-ratio:1}#studio-practices .forma .band{padding:28px}}
+
+/* About pages already supply a numbered label; keep one label per row. */
+#studio-practices .forma .columns>div:has(.index):before{content:none;display:none}
+#studio-practices .forma .columns .index{font-size:12px;line-height:2;margin:0;color:var(--muted)}
