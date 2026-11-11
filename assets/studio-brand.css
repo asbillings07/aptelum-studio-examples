@@ -1,0 +1,20 @@
+/* Approved Studio identity. Client example themes keep their own styling. */
+.studio-index{color-scheme:light;--paper:#f7f8fc;--ink:#111a30;--muted:#53627a;--line:#d6deeb;--accent:#304b61}
+.studio-nav{padding:24px 0;gap:32px}
+.studio-nav .studio-logo{display:block;flex:0 0 auto;width:248px;line-height:0;min-height:44px;align-content:center}
+.studio-nav .studio-logo img{display:block;width:100%;height:auto;object-fit:contain}
+.studio-nav nav{gap:30px}
+.studio-nav nav a{text-decoration:none}
+.studio-nav nav a[aria-current="page"],.studio-nav nav a:hover{text-decoration:underline;text-underline-offset:7px}
+.studio-index a:focus-visible{outline:2px solid var(--accent);outline-offset:6px}
+.studio-attribution{display:flex;align-items:center;gap:10px}
+.studio-index .studio-attribution img{width:28px;height:28px;object-fit:contain;flex:0 0 auto}
+@media(max-width:650px){
+ .studio-nav{display:grid;grid-template-columns:minmax(0,1fr);gap:9px;padding:21px 0 12px}
+ .studio-nav .studio-logo{width:224px;max-width:100%}
+ .studio-nav nav{width:100%;justify-content:space-between;gap:16px}
+ .studio-nav nav a{min-height:44px}
+ .studio-intro{padding-top:38px}
+ .studio-intro h1{font-size:42px}
+}
+@media(max-width:350px){.studio-nav .studio-logo{width:212px}.studio-nav nav{gap:12px}.studio-intro h1{font-size:38px}}

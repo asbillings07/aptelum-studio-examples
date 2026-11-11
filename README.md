@@ -10,6 +10,8 @@ Navigation, image/product disclosures, menus and FAQs use native controls. Vale 
 
 Images and assets are served from this repository. Generated people and product illustrations are fictional; no invented metrics, credentials, testimonials, certifications or measured conversion results are presented as real evidence. GitHub Pages hosts the files and maintains its own security logs; see each site's privacy link. Noindex is a feedback preference, not privacy or access control. Unknown routes use the shared404, while Vale's404 can also be inspected directly. Its sitemap is only a route inventory; no search submission is made.
 
+The Studio gallery uses its approved folded-ribbon logo, a quiet solid-blue Aptelum attribution and relevant human imagery. The gallery remains light; the six client examples retain their own Light/Dark/System controls. Vale service images sit alongside text at wider widths and stack on phones.
+
 Only public example assets belong here, not private company records, planning, source tooling or test fixtures. These designs do not establish owner acceptance, human QA, clinical/client approval, accessibility conformance, production readiness or exclusive rights to names/assets. Aptelum Studio pricing remains provisional.
 
 GitHub Pages publishes the root of `main`; a push changes the public examples. Review the exact candidate before pushing and verify its build and live output afterward. No custom domain or paid service is configured. Vercel publication is not part of this feedback edition.
