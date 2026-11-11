@@ -1,6 +1,6 @@
 # Aptelum Studio examples
 
-Six public, fictional website designs for feedback. [Industries](https://aptelumstudio.com/) groups [Wellness](https://aptelumstudio.com/industries/wellness/) and [Technology](https://aptelumstudio.com/industries/technology/). These are marketing design examples, not operating practices, products or services.
+Six public, fictional website designs for feedback. [Industries](https://asbillings07.github.io/aptelum-studio-examples/) groups [Wellness](https://asbillings07.github.io/aptelum-studio-examples/industries/wellness/) and [Technology](https://asbillings07.github.io/aptelum-studio-examples/industries/technology/). These are marketing design examples, not operating practices, products or services.
 
 Forma Aesthetics emphasizes choosing a provider, Vale Skin Studio understanding skin-care options, and Morrow Wellness & Body Care a welcoming first step. Each has a concise homepage, distinct service explanations, provider/approach and consultation pages. Editorial rows, soft galleries and alternating care paths give them different identities. Relevant local imagery and bounded portraits support readable layouts. Complimentary initial consultations are illustrative offers for these examples; treatments and further clinical assessments are separate. Real client offers require individual confirmation.
 
@@ -14,4 +14,4 @@ The Studio gallery uses its approved folded-ribbon logo, a quiet solid-blue Apte
 
 Only public example assets belong here, not private company records, planning, source tooling or test fixtures. These designs do not establish owner acceptance, human QA, clinical/client approval, accessibility conformance, production readiness or exclusive rights to names/assets. Aptelum Studio pricing remains provisional.
 
-GitHub Pages publishes the root of `main`; a push changes the public examples. Review the exact candidate before pushing and verify its build and live output afterward. The approved custom domain is `aptelumstudio.com`, with `www` pointing to the same GitHub Pages site. Domain DNS and HTTPS verification are part of the publication check. No paid hosting service is introduced. Vercel publication is not part of this feedback edition.
+GitHub Pages publishes the root of `main`; a push changes the public examples. Review the exact candidate before pushing and verify its build and live output afterward. No custom domain or paid service is configured. Vercel publication is not part of this feedback edition.
