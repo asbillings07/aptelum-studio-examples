@@ -21,16 +21,16 @@ Configure one project named `aptelum-studio` in the existing **Aptelum Labs** te
 - Framework: Other / null; Node 22.x; build: `node scripts/build-preview.mjs`; no install command; output: `dist`.
 - Preview deployments enabled. Production branch: `main`; `vercel.json` disables Git deployment for `main`.
 - Project ignored-build command: `test "$VERCEL_ENV" != "preview"`. Exit 0 skips every non-preview build, including a missing environment. The builder independently refuses a hosted environment other than Preview.
-- Vercel Authentication: Standard Protection (`all_except_custom_domains`), which covers generated deployment domains. Add **no custom domains**, bypass links or automation bypass secrets. Verify protection before sharing. Keep build/source visibility private, fork protection on and optional analytics/Speed Insights off. Disable preview toolbar injection because these examples intentionally restrict scripts.
+- Vercel Authentication: **All Deployments** (`all`), retained through Preview review. Do not downgrade it to Standard Protection. Add **no custom domains**, bypass links or automation bypass secrets. Verify protection before sharing. Keep build/source visibility private, fork protection on and automatic custom-domain assignment off. Add no analytics instrumentation or optional paid service. The existing Speed Insights record had no data and paid analytics quantity was zero at the November 11 preflight; do not treat a record identifier alone as enabled instrumentation or paid service. Recheck actual account state before another release. Disable preview toolbar injection because these examples intentionally restrict scripts.
 - No new plan, paid add-on, seat, database, auth tenant or billing service. If the existing account cannot supply these settings, stop and record the gap.
 
 These controls prevent routine automatic production builds. An authorized administrator can change them; they are not a substitute for owner approval, independent source review or verified provider permissions. Do not claim project settings or a live preview exist from this file alone: consult the PR's actual provider receipt.
 
-## First preview and recovery
+## Preview updates and recovery
 
 1. Independently review the immutable candidate, pass CI and keep the PR draft for the owner's review. Source changes require renewed review. Preserve approved layouts; changed hosting disclosure is part of preview review.
-2. Read back the intended team/project, protection and no-custom-domain settings. Creating/linking must not silently release production. The main branch does not contain this builder yet, so it cannot be used for the initial preview.
-3. Request one preview from the reviewed branch and exact Git SHA. Inspect the returned deployment target, source and status. A production target is a stop even if no domain is attached. Never promote it as a workaround.
+2. Read back the intended team/project, protection and no-custom-domain settings. Creating/linking must not silently release production. The main branch does not contain this builder yet and remains disabled for Vercel deployment.
+3. Publish the reviewed branch once and let Git integration create its Preview; do not also request a duplicate manual deployment. Bind verification to the exact Git SHA. Inspect the returned deployment target, source and status. A production target is a stop even if no domain is attached. Never promote it as a workaround.
 4. Verify anonymous protection, authorized review access, headers, representative desktop/mobile paths, all six homepages, Vale service detail and the unavailable consultation outcome. A successful build alone is insufficient. Provide the ordinary preview URL; the reviewer uses their Vercel access. No bypass link is needed.
 5. Keep the existing Pages site untouched. For a failed preview, retain the failure and known-good Pages site. Inspect state before retrying a lost provider reply; at most two readbacks and one justified retry, with a ten-minute build and twenty-minute verification investigation limit. Stop on wrong target, missing protection, unexpected charges or uncertain effects. AB owns the next decision.
 
@@ -45,3 +45,9 @@ Stage a production-configured artifact without assigning domains, test that arti
 Keep Pages during the migration and recovery window. After the Vercel site is accepted, obtain the owner's explicit Pages retirement approval, inventory shared old links and decide their transition. Disable Pages only then, while retaining source/history and agreed recovery material. Production approval alone is not permission to delete the old repository.
 
 References checked November 11: [Git branch deployment controls](https://vercel.com/docs/project-configuration/git-configuration), [Vercel Authentication](https://vercel.com/docs/deployment-protection/methods-to-protect-deployments/vercel-authentication), [deployment API](https://vercel.com/docs/rest-api/deployments/create-a-new-deployment), [staged production builds](https://vercel.com/docs/deployments/managing-deployments).
+
+## Header alignment revision
+
+The owner approved correcting header alignment across all six examples and updating the protected Preview after independent review. Full-width backgrounds are separate from bounded content: Forma/Morrow retain a 1320px content shell, Vale 1440px, and Technology 1320px. Each header, example strip and main layout shares its brand gutter; gutters stop growing on wide screens. Brand shapes, quiet appearance controls and business actions remain unchanged.
+
+Check all six at 320px and 390px mobile, intermediate menu widths, 1280px desktop and 1920px/2560px wide screens. Verify centered content, matching header/main edges, full-width surfaces, no overflow, open mobile/appearance menus and Light/Dark/System behavior. Include representative interior pages; screenshot checks must allow lazy images to settle. Keep PR #1 draft, Pages/main and DNS unchanged, pricing provisional and discovery issue #2 open. This approval permits the reviewed protected Preview update, not production or merge.
