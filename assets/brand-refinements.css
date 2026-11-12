@@ -1,0 +1,108 @@
+/* Approved brand-specific refinements. Shared controls remain consistent. */
+@font-face{font-family:Manrope;src:url('fonts/manrope.woff2') format('woff2');font-style:normal;font-weight:200 800;font-display:swap}
+@font-face{font-family:Fraunces;src:url('fonts/fraunces.woff2') format('woff2');font-style:normal;font-weight:100 900;font-display:swap}
+@font-face{font-family:Lora;src:url('fonts/lora.woff2') format('woff2');font-style:normal;font-weight:400 700;font-display:swap}
+@font-face{font-family:'Source Serif 4';src:url('fonts/sourceserif4.woff2') format('woff2');font-style:normal;font-weight:200 900;font-display:swap}
+@font-face{font-family:Outfit;src:url('fonts/outfit.woff2') format('woff2');font-style:normal;font-weight:100 900;font-display:swap}
+@font-face{font-family:'IBM Plex Sans';src:url('fonts/ibmplexsans.woff2') format('woff2');font-style:normal;font-weight:100 700;font-display:swap}
+/* Typography communicates different service personalities; controls stay familiar. */
+#studio-practices .forma{font-family:Manrope,Arial,sans-serif}
+#studio-practices .forma h1,#studio-practices .forma h2,#studio-practices .forma h3{font-family:Manrope,Arial,sans-serif;font-weight:500;letter-spacing:-.045em;line-height:1.15}
+body.vale-story h1,body.vale-story h2,body.vale-story h3,body.vale-story .story-title strong{font-family:Fraunces,Georgia,serif;font-weight:430;font-optical-sizing:auto;letter-spacing:-.035em;line-height:1.12}
+#studio-practices .morrow h1,#studio-practices .morrow h2,#studio-practices .morrow h3,#studio-practices .morrow .story-title strong{font-family:Lora,Georgia,serif;font-weight:400;letter-spacing:-.04em;line-height:1.18}
+body.northstar h1,body.northstar h2,body.northstar h3,body.northstar .service-note{font-family:'Source Serif 4',Georgia,serif;font-weight:450;letter-spacing:-.035em;line-height:1.1}
+body.threadline{font-family:Outfit,Arial,sans-serif}
+body.threadline h1,body.threadline h2,body.threadline h3{font-family:Outfit,Arial,sans-serif;font-weight:420;letter-spacing:-.04em;line-height:1.08}
+body.vector-harbor{font-family:'IBM Plex Sans',Arial,sans-serif}
+body.vector-harbor h1,body.vector-harbor h2,body.vector-harbor h3{font-family:'IBM Plex Sans',Arial,sans-serif;font-weight:500;letter-spacing:-.035em;line-height:1.12}
+.brand-pictogram{width:26px;height:26px;display:inline-block;vertical-align:middle;flex-shrink:0;margin-right:12px;color:var(--accent);overflow:visible}
+#studio-practices .forma .brand-pictogram{stroke-width:1.25;stroke-linecap:square}
+body.vale-story .brand-pictogram{width:28px;height:28px;color:var(--ink)}
+#studio-practices .morrow .brand-pictogram{stroke-width:1.3}
+body.northstar .brand-pictogram{stroke-width:1.9;stroke-linejoin:miter}
+body.threadline .brand-pictogram{stroke-width:2}
+body.vector-harbor .brand-pictogram{stroke-width:1.3;stroke-linecap:square;stroke-linejoin:miter}
+/* Bounded composition rather than scaling images indefinitely with the viewport. */
+body.vale-story{--page-width:1360px;--page-gutter:clamp(22px,5vw,64px)}
+body.vale-story main .visual-hero{grid-template-columns:minmax(0,1.22fr) minmax(0,.95fr);gap:clamp(32px,4vw,64px);align-items:center}
+body.vale-story .visual-hero h1{font-size:clamp(42px,4.1vw,62px);max-width:19ch}
+body.vale-story .visual-hero .lead{font-size:18px;line-height:1.7;max-width:35em}
+body.vale-story .visual-hero figure{max-width:480px;width:100%;justify-self:end}
+body.vale-story .visual-hero img{aspect-ratio:1.16;max-height:420px;border-radius:110px 24px 100px 24px;object-position:center}
+body.vale-story .hero-second-line{display:inline}
+#studio-practices .forma .visual-hero h1{font-size:clamp(40px,4.4vw,64px);max-width:17ch}
+#studio-practices .morrow .visual-hero h1{font-size:clamp(40px,4.6vw,68px)}
+#studio-practices .visual-edition .photo-break{margin:clamp(48px,5vw,72px) 0 0}
+#studio-practices .visual-edition .section,body.vale-story .section{margin-top:clamp(56px,6vw,84px)}
+#studio-practices .visual-edition .band{margin-top:clamp(48px,5vw,72px)}
+#studio-practices .forma .photo-break img{max-height:340px;aspect-ratio:1.65}
+#studio-practices .forma .photo-break figcaption{font-size:24px;line-height:1.5}
+#studio-practices .forma .profile img{max-height:380px;width:100%;object-fit:cover;object-position:center 20%}
+#studio-practices .morrow .image-story{margin-top:clamp(48px,6vw,80px)}
+#studio-practices .morrow .visual-hero img{max-height:380px}
+body.vale-story .band h2,#studio-practices .visual-edition .band h2{font-size:clamp(28px,3vw,38px)}
+/* Northstar: a personal service relationship, shown as a continuing timeline. */
+.north-relationship{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(40px,7vw,100px);align-items:start}
+.partnership-note{background:var(--soft);border-radius:3px 64px 3px 3px;padding:clamp(28px,3vw,44px);border-left:4px solid var(--accent)}
+.partnership-note>.brand-pictogram{width:36px;height:36px;margin-bottom:25px}
+.partnership-note h2{font-size:clamp(30px,3.1vw,42px);margin-bottom:24px}
+.partnership-note p:not(.kicker){font-size:17px;color:var(--muted);line-height:1.7}
+.partnership-note .textlink{margin-top:22px}
+.partnership-timeline{list-style:none;padding:0;margin:4px 0 0;min-width:0}
+.partnership-timeline li{position:relative;padding:0 0 36px 32px;border-left:1px solid var(--line);min-width:0}
+.partnership-timeline li:last-child{border-color:transparent;padding-bottom:0}
+.timeline-dot{position:absolute;left:-6px;top:5px;width:11px;height:11px;background:var(--accent);border-radius:50%;box-shadow:0 0 0 5px var(--paper)}
+.partnership-timeline .phase{font:11px/1.6 Arial,sans-serif;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin-bottom:8px}
+.partnership-timeline h3{font-size:28px;margin-bottom:12px}
+.partnership-timeline p:not(.phase){font-size:16px;line-height:1.65;color:var(--muted);max-width:34em}
+.takeaway{display:inline-block;margin-top:14px;border-bottom:1px solid var(--line);padding-bottom:6px;font-size:13px;color:var(--ink)}
+/* Threadline: an actual handoff, with the context visible in one place. */
+.handoff-story{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:clamp(30px,5vw,72px);align-items:center;padding:32px 0 16px}
+.loose-note{background:var(--sand);border-radius:40px 40px 40px 8px;padding:36px 30px;transform:rotate(-2deg);position:relative}
+.note-label{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+.loose-note p{font-family:Outfit,Arial,sans-serif;font-size:clamp(26px,2.6vw,34px);font-weight:400;line-height:1.25;margin:26px 0}
+.note-question{font-size:15px;line-height:1.8;color:var(--muted)}
+.request-sheet{background:var(--surface);border:1px solid var(--line);border-radius:26px;padding:clamp(24px,3vw,40px);min-width:0;box-shadow:0 16px 40px #2919380a}
+.sheet-heading{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-bottom:28px}
+.sheet-heading .brand-pictogram{margin-right:0}
+.sheet-state{margin-left:auto;background:var(--soft);border-radius:20px;padding:6px 12px;color:var(--ink)}
+.request-sheet h3{font-size:clamp(26px,3vw,36px);margin-bottom:25px}
+.request-sheet dl{margin:0}.request-sheet dl>div{display:grid;grid-template-columns:115px minmax(0,1fr);gap:24px;border-top:1px solid var(--line);padding:20px 0}
+.request-sheet dt{font-size:13px;font-weight:500;color:var(--accent)}
+.request-sheet dd{margin:0;font-size:16px;line-height:1.65;color:var(--muted)}
+.handoff-detail{margin-top:10px;border-radius:14px;background:var(--sage)}
+.handoff-detail summary{padding:18px 20px;min-height:52px;line-height:1.5;font-size:15px}
+.handoff-detail p{padding:0 20px 20px;font-size:15px;color:var(--muted);line-height:1.7}
+/* Vector Harbor: a mechanism, including the branch that needs attention. */
+.event-lab{border:1px solid var(--line);background:var(--surface);border-radius:6px;padding:clamp(22px,3vw,40px)}
+.lab-heading{display:flex;gap:10px;align-items:center;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:22px;font:12px/1.7 'Courier New',monospace;color:var(--accent)}
+.lab-heading>.brand-pictogram{margin:0 6px 0 0}
+.lab-heading>span:last-child{margin-left:auto;color:var(--muted)}
+.event-route{display:flex;list-style:none;padding:36px 0 32px;margin:0;gap:34px}
+.event-route li{flex:1;min-width:0;padding:24px 20px;border:1px solid var(--line);position:relative;background:var(--node)}
+.event-route li+li:before{content:'→';position:absolute;left:-27px;top:44%;color:var(--accent);font:22px 'Courier New',monospace}
+.node-code{display:block;font:11px/1.5 'Courier New',monospace;letter-spacing:.07em;color:var(--accent);margin-bottom:18px}
+.event-route h3{font-size:23px;line-height:1.25;margin-bottom:15px}
+.event-route p{font-size:14px;color:var(--muted)}
+.exception-branch{border-top:1px dashed var(--muted);margin-left:36%}
+.exception-branch summary{list-style:none;display:flex;gap:14px;align-items:center;padding:22px 0 8px;min-height:64px;font-size:16px;line-height:1.5}
+.exception-branch summary::-webkit-details-marker{display:none}
+.branch-glyph{font:30px 'Courier New',monospace;color:var(--accent)}
+.branch-toggle{margin-left:auto;font-size:24px;color:var(--accent)}
+.exception-branch[open] .branch-toggle{transform:rotate(45deg)}
+.exception-answer{padding:22px 0 0 32px}.exception-answer h3{font-size:22px;margin-bottom:14px}
+.exception-answer p{font-size:16px;color:var(--muted);line-height:1.75}
+.exception-answer .textlink{margin-top:12px}
+/* Content-led breakpoints; comfortable widths on both sides of each switch. */
+@media(min-width:901px) and (max-width:1120px){body.vale-story .visual-hero h1{font-size:46px}body.vale-story main .visual-hero{gap:28px}body.vale-story .visual-hero img{aspect-ratio:1.05}}
+@media(max-width:900px){body.vale-story main .visual-hero{grid-template-columns:1fr;gap:34px}body.vale-story .visual-hero .stack{max-width:650px}body.vale-story .visual-hero figure{max-width:650px;justify-self:start}body.vale-story .visual-hero img{aspect-ratio:1.8;max-height:360px}body.vale-story .visual-hero h1{font-size:clamp(40px,6vw,54px);max-width:21ch}.north-relationship{grid-template-columns:1fr;gap:40px}.partnership-note{max-width:650px}.handoff-story{grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:26px}.request-sheet dl>div{grid-template-columns:1fr;gap:6px}.event-route{gap:24px}.event-route li{padding:20px 14px}.event-route li+li:before{left:-21px}.event-route h3{font-size:21px}.exception-branch{margin-left:0}}
+@media(max-width:700px){.handoff-story{grid-template-columns:1fr;gap:30px;padding:12px 0}.loose-note{transform:none;padding:28px}.loose-note p br{display:none}.event-route{flex-direction:column;gap:28px;padding:28px 0}.event-route li{padding:24px}.event-route li+li:before{content:'↓';left:30px;top:-27px}.event-route h3{font-size:24px}.section-intro{gap:24px}.partnership-timeline li{padding-left:26px}.sheet-state{margin-left:0}.exception-answer{padding-left:0}.lab-heading>span:last-child{margin-left:0;flex-basis:100%}}
+@media(max-width:600px){body.vale-story .visual-hero img{aspect-ratio:1.5;border-radius:70px 18px 65px 18px}#studio-practices .visual-edition .photo-break{margin-top:48px}#studio-practices .forma .visual-hero h1{font-size:40px}#studio-practices .morrow .visual-hero h1{font-size:40px}.brand-pictogram{width:23px;height:23px;margin-right:8px}.request-sheet{padding:24px}.partnership-note{padding:28px}.lab-heading{font-size:11px}.exception-branch summary{font-size:15px;gap:10px}}
+
+/* A repeated provider portrait becomes a quiet brand statement, not a stock identity. */
+#studio-practices .profile-note,body.vale-story .profile-note{display:flex;align-items:center;justify-content:center;min-height:240px;padding:32px;background:var(--soft);border-radius:4px 54px 4px 4px;font-size:clamp(26px,3vw,38px);line-height:1.35;letter-spacing:-.03em}
+body.vale-story .profile-note{font-family:Fraunces,Georgia,serif;background:var(--wash);border:1px solid var(--line);border-radius:60px 20px 60px 20px}
+#studio-practices img[data-stock-id="4586740"],body.vale-story img[data-stock-id="4586740"]{object-position:50% 40%}
+body.vale-story img[data-stock-id="36497925"]{object-position:50% 65%}
+body.vale-story img[data-stock-id="6925487"]{object-position:50% 40%}
+@media(max-width:700px){#studio-practices .profile-note,body.vale-story .profile-note{min-height:150px}}

@@ -15,8 +15,8 @@
 #studio-practices .morrow h1,#studio-practices .morrow h2 { font-family:Georgia,serif; letter-spacing:-.035em; }
 #studio-practices a,#studio-practices summary { color:inherit; font:inherit; }
 #studio-practices a { max-width:100%; scroll-margin-block:20px; }
-#studio-practices .fiction-note { padding:10px 5%; background:var(--panel); color:var(--muted); font-size:11px; letter-spacing:.07em; }
-#studio-practices .practice-header { margin:0 5%; padding:24px 0; border-bottom:1px solid var(--line); display:flex; align-items:center; gap:20px; flex-wrap:wrap; }
+#studio-practices .fiction-note { padding:10px max(var(--page-gutter), calc((100% - var(--page-width)) / 2 + var(--page-gutter))); background:var(--panel); color:var(--muted); font-size:11px; letter-spacing:.07em; }
+#studio-practices .practice-header { width:calc(100% - 2 * var(--page-gutter)); max-width:calc(var(--page-width) - 2 * var(--page-gutter)); margin:0 auto; padding:24px 0; border-bottom:1px solid var(--line); display:flex; align-items:center; gap:20px; flex-wrap:wrap; }
 #studio-practices .brand { background:transparent; border:0; padding:0; min-height:44px; text-align:left; display:flex; flex-direction:column; }
 #studio-practices .brand strong { font-size:32px; line-height:1.15; letter-spacing:.05em; font-weight:500; }
 #studio-practices .brand small { color:var(--muted); font-size:11px; letter-spacing:.16em; }
@@ -38,7 +38,7 @@
 #studio-practices .secondary { background:transparent; border-color:var(--line); color:var(--ink); }
 #studio-practices .morrow .action { border-radius:28px; }
 #studio-practices .actions { display:flex; align-items:center; flex-wrap:wrap; gap:14px; }
-#studio-practices .page { padding:46px 5% 60px; }
+#studio-practices .page { padding:46px var(--page-gutter) 60px; }
 #studio-practices .stack { display:flex; flex-direction:column; gap:20px; align-items:flex-start; }
 #studio-practices .eyebrow { color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:.13em; }
 #studio-practices .lead { font-size:19px; max-width:43em; }
@@ -88,7 +88,7 @@
 #studio-practices .visit-grid { display:grid; grid-template-columns:1fr 1fr; gap:7%; margin-top:40px; }
 #studio-practices .visit-grid h2 { font-size:28px; margin-bottom:18px; }
 #studio-practices .visit-grid p { margin:16px 0; }
-#studio-practices .practice-footer { margin-top:auto; padding:28px 5%; background:var(--panel); display:flex; align-items:start; justify-content:space-between; gap:25px; }
+#studio-practices .practice-footer { margin-top:auto; padding:28px max(var(--page-gutter), calc((100% - var(--page-width)) / 2 + var(--page-gutter))); background:var(--panel); display:flex; align-items:start; justify-content:space-between; gap:25px; }
 #studio-practices .practice-footer p { font-size:13px; }
 #studio-practices .practice-footer .nav { margin:0; }
 #studio-practices .handoff { max-width:680px; margin:30px auto; display:flex; flex-direction:column; align-items:flex-start; gap:22px; }
@@ -107,9 +107,9 @@
 }
 @container practice (max-width:600px) {
  #studio-practices .practice {  }
- #studio-practices .page { padding:34px 6% 45px; }
- #studio-practices .practice-header { margin:0 6%; gap:16px; padding:18px 0; }
- #studio-practices .fiction-note { padding-left:6%; padding-right:6%; }
+ #studio-practices .page { padding:34px var(--page-gutter) 45px; }
+ #studio-practices .practice-header { margin:0 auto; gap:16px; padding:18px 0; }
+ #studio-practices .fiction-note { padding-left:var(--page-gutter); padding-right:var(--page-gutter); }
  #studio-practices .hero,#studio-practices .vale .hero,#studio-practices .morrow .hero,#studio-practices .detail-top,#studio-practices .split-note,#studio-practices .visit-grid { grid-template-columns:1fr; gap:28px; }
  #studio-practices .hero h1 { max-width:15ch; }
  #studio-practices .hero img { max-height:270px; aspect-ratio:1.4; }
@@ -134,7 +134,9 @@
 
 html {color-scheme:light dark; scroll-behavior:auto;}
 body {margin:0;background:light-dark(#f8f8f5,#1d2229);}
-#studio-practices .practice {min-height:100vh;max-width:1440px;margin:auto;}
+/* Full-width surfaces, bounded content; the same gutter aligns header and pages. */
+#studio-practices .practice {--page-width:1320px;--page-gutter:clamp(20px,5vw,66px);min-height:100vh;width:100%;margin:0;}
+@media(max-width:600px){#studio-practices .practice{--page-gutter:max(20px,6vw);}}
 #studio-practices .practice a {text-decoration:none;}
 #studio-practices .nav a {display:inline-flex;align-items:center;}
 #studio-practices .text-link {display:inline-flex;align-items:center;}

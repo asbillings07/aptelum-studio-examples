@@ -1,0 +1,73 @@
+{
+  "source": [
+    {
+      "family": "manrope",
+      "source": "https://github.com/google/fonts/blob/main/ofl/manrope/Manrope[wght].ttf",
+      "size": 164700
+    },
+    {
+      "family": "fraunces",
+      "source": "https://github.com/google/fonts/blob/main/ofl/fraunces/Fraunces[SOFT,WONK,opsz,wght].ttf",
+      "size": 360440
+    },
+    {
+      "family": "lora",
+      "source": "https://github.com/google/fonts/blob/main/ofl/lora/Lora[wght].ttf",
+      "size": 212196
+    },
+    {
+      "family": "sourceserif4",
+      "source": "https://github.com/google/fonts/blob/main/ofl/sourceserif4/SourceSerif4[opsz,wght].ttf",
+      "size": 1209508
+    },
+    {
+      "family": "outfit",
+      "source": "https://github.com/google/fonts/blob/main/ofl/outfit/Outfit[wght].ttf",
+      "size": 110884
+    },
+    {
+      "family": "ibmplexsans",
+      "source": "https://github.com/google/fonts/blob/main/ofl/ibmplexsans/IBMPlexSans[wdth,wght].ttf",
+      "size": 537244
+    }
+  ],
+  "packaging": "TTF to WOFF2 using FontTools 4.60.2 and Brotli 1.2.1; all glyphs and variable axes retained; no third-party runtime font requests. Original OFL licenses retained.",
+  "files": [
+    {
+      "familyFile": "fraunces",
+      "sourceBytes": 360440,
+      "woff2Bytes": 195112,
+      "sha256": "080619516e7a6053caa5628a6eb90ad0044adf560ca2d97eea265358b6e26424"
+    },
+    {
+      "familyFile": "ibmplexsans",
+      "sourceBytes": 537244,
+      "woff2Bytes": 230064,
+      "sha256": "5f8afdda36a6fe98fe210b6c4607d2281dab08e9790557367f5603c27a2d6ef3"
+    },
+    {
+      "familyFile": "lora",
+      "sourceBytes": 212196,
+      "woff2Bytes": 84820,
+      "sha256": "59e14a08bff3d1f69bf3dfba1452e37441a579af85ad45203514298ab2a07721"
+    },
+    {
+      "familyFile": "manrope",
+      "sourceBytes": 164700,
+      "woff2Bytes": 53676,
+      "sha256": "2ca4f22996bed55235b49633f25960e6e1d720014edf1af848dbb6f221de1ffa"
+    },
+    {
+      "familyFile": "outfit",
+      "sourceBytes": 110884,
+      "woff2Bytes": 45136,
+      "sha256": "53907a61f99b15348e72bef7c617398124adb06464ba5f201db71828c886c9dd"
+    },
+    {
+      "familyFile": "sourceserif4",
+      "sourceBytes": 1209508,
+      "woff2Bytes": 427692,
+      "sha256": "57825bc5199eb8ac505b96715c860c88fe5b4e0ea0fe65a13915db2d10d9d45b"
+    }
+  ]
+}

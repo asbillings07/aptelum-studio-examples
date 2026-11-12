@@ -12,7 +12,7 @@ html[data-color-mode="dark"] body.northstar{color-scheme:dark;--paper:#141e22;--
 html[data-color-mode="dark"] body.vector-harbor{color-scheme:dark;--paper:#0d181f;--ink:#e9f0f2;--muted:#a5b8c1;--soft:#142730;--line:#34505b;--accent:#92e3bd;--on:#10291e;--surface:#12262e;--glow:#234d49;--console:#12262e;--code:#091218;--code-ink:#c4dedb;--node:#102129;--node-wide:#1e3c3e;--node-ink:#a6edcb;--halo:#274f45;}
 
 .example{align-items:center;gap:12px 24px}
-.example>a{margin-left:auto}
+.example-nav{display:flex;align-items:center;flex-wrap:wrap;gap:8px 16px;margin-left:auto}
 .threadline .visual.workboard{background:var(--soft)}
 .threadline .workboard .board{background:var(--surface);border-color:var(--line)}
 .threadline .workboard .board .pill{background:var(--soft);color:var(--ink)}

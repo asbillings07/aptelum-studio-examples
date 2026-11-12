@@ -103,7 +103,7 @@ body { margin:0; }
 #studio-practices { color-scheme:light; }
 #studio-practices .practice.visual-edition { --paper:#f8f8f5; --ink:#272f37; --muted:#52606a; --panel:#e6ebed; --practice-surface:#fff; --accent:#2a4055; --on-accent:#fff; --line:#cbd1d4; }
 #studio-practices .morrow.visual-edition { --paper:#f5f7ef; --ink:#2b4237; --muted:#526459; --panel:#e6edde; --practice-surface:#fcfdf9; --accent:#324d3c; --line:#c6d1bd; }
-#studio-practices .visual-edition .page { max-width:1320px; width:100%; margin:auto; padding-top:66px; }
+#studio-practices .visual-edition .page { max-width:var(--page-width); width:100%; margin:auto; padding-top:66px; }
 #studio-practices .visual-edition .section { margin-top:88px; }
 .visual-edition main .visual-hero { display:grid; grid-template-columns:1fr 1.08fr; gap:7%; align-items:center; }
 .visual-edition .visual-hero h1 { max-width:15ch; }
