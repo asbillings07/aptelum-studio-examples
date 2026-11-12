@@ -24,7 +24,7 @@ def build(root, **env):
 class Page(HTMLParser):
     def __init__(self, text):
         super().__init__()
-        self.links, self.ids, self.scripts, self.tags = [], set(), [], []
+        self.links, self.ids, self.scripts, self.tags, self.images = [], set(), [], [], []
         self.feed(text)
 
     def handle_starttag(self, tag, attrs):
@@ -37,6 +37,8 @@ class Page(HTMLParser):
                 self.links.append(attrs[name])
         if tag == 'script':
             self.scripts.append(attrs)
+        if tag == 'img':
+            self.images.append(attrs)
 
 
 class PreviewTests(unittest.TestCase):
@@ -144,6 +146,36 @@ class PreviewTests(unittest.TestCase):
 
     def test_bad_preview_hostname_rejected(self):
         self.assertNotEqual(build(self.fixture(), VERCEL_URL='attacker.example/path').returncode, 0)
+
+    def test_photos_are_unique_per_example_and_credited(self):
+        manifest = json.loads((ROOT / 'docs/design/photography.json').read_text())
+        inventory = json.loads((ROOT / 'site-files.json').read_text())
+        credits = {photo['id']: photo for photo in manifest['photos']}
+        credited_placements = {(entry['page'], entry['photoId']) for entry in manifest['placements']}
+        observed_placements = set()
+        aliases = manifest['aliases']
+        for alias, canonical in aliases.items():
+            self.assertEqual(Page((ROOT / alias).read_text()).images,
+                             Page((ROOT / canonical).read_text()).images)
+        for brand in ('forma', 'vale', 'morrow', 'northstar', 'threadline', 'vector-harbor'):
+            seen = set()
+            for path in inventory:
+                if not path.startswith(brand + '/') or not path.endswith('.html') or path in aliases:
+                    continue
+                for img in Page((ROOT / path).read_text()).images:
+                    src = img['src'].replace('/aptelum-studio-examples/', '/')
+                    target = unquote(urlsplit(urljoin('https://preview.test/' + path, src)).path).lstrip('/')
+                    digest = hashlib.sha256((ROOT / target).read_bytes()).hexdigest()
+                    self.assertNotIn(digest, seen, (brand, path, target))
+                    seen.add(digest)
+                    if 'data-stock-id' in img:
+                        photo_id = img['data-stock-id']
+                        self.assertEqual(credits[photo_id]['file'], target)
+                        self.assertTrue(credits[photo_id]['credit'])
+                        self.assertEqual(credits[photo_id]['license'], 'https://www.pexels.com/license/')
+                        self.assertTrue(img.get('alt'))
+                        observed_placements.add((path, photo_id))
+        self.assertEqual(observed_placements, credited_placements)
 
 
 if __name__ == '__main__':

@@ -26,7 +26,7 @@ async function build() {
   }
   const prepared = [];
   for (const path of paths) {
-    if (typeof path !== 'string' || !/^[a-z0-9][a-z0-9/_.-]*\.(html|css|js|svg|png|jpg|webp|txt|xml)$/.test(path)
+    if (typeof path !== 'string' || !/^[a-z0-9][a-z0-9/_.-]*\.(html|css|js|svg|png|jpg|webp|avif|woff2|txt|xml)$/.test(path)
         || path.split('/').some(part => part.startsWith('.'))
         || /^(scripts|tests|docs|dist)\//.test(path)) {
       throw new Error(`Not a public asset path: ${path}`);

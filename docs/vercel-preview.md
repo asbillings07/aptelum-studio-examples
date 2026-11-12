@@ -4,11 +4,11 @@ Owner/operator: @asbillings07. November 11, 2026. This increment prepares the ap
 
 ## Source and scope
 
-The existing public site remains at <https://asbillings07.github.io/aptelum-studio-examples/>. Its `main` branch still publishes through GitHub Pages. This preview branch does not change those source pages, DNS or the Pages domain setting. `aptelumstudio.com` is reserved for a separately approved Vercel production launch.
+The existing public site remains at <https://asbillings07.github.io/aptelum-studio-examples/>. Its `main` branch still publishes through GitHub Pages. Changes on this preview branch do not alter main or its published Pages site, DNS or the Pages domain setting. `aptelumstudio.com` is reserved for a separately approved Vercel production launch.
 
 Reuse the approved static site instead of adding a framework, CMS or application services. Auth0, Supabase and Stripe remain the selected services for features that actually need them; this gallery needs none of them. Keep real client projects and data separate. The existing client-hosting plan is not changed by this Studio-owned, already-public fictional preview workflow.
 
-`site-files.json` explicitly lists the 81 deployable files, including 52 HTML pages. `node scripts/build-preview.mjs` creates `dist/` using only that inventory. It removes the Pages path prefix from generated HTML, updates the five hosting disclosures to Vercel, and uses the generated preview hostname for Vale's route inventory. The original source files stay compatible with Pages. Images, styles, scripts, content and fictional/unavailable handoff states are retained. No new data collection is added.
+`site-files.json` explicitly lists the 118 deployable files, including 52 HTML pages, 24 stock photos and six locally served WOFF2 fonts. `node scripts/build-preview.mjs` creates `dist/` using only that inventory. It removes the Pages path prefix from generated HTML, updates the five hosting disclosures to Vercel, and uses the generated preview hostname for Vale's route inventory. The original source files stay compatible with Pages. Images, styles, scripts, content and fictional/unavailable handoff states are retained. No new data collection is added.
 
 The builder has no third-party dependencies, network calls or secrets. Local builds use `preview.invalid` in the sitemap; Vercel builds use `VERCEL_URL`. This preview remains noindex and is not submitted to search engines. Only `dist/` may be served: repository tooling, documentation, environment files and private sources are not deployable assets.
 
