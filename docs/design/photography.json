@@ -1,0 +1,569 @@
+{
+  "reviewDate": "2026-11-12",
+  "usage": "Illustrative stock; no provider identity, patient-result or endorsement claims. One photo per logical page placement within each example; Vale aliases mirror their canonical pages. Cross-brand reuse is permitted.",
+  "license": "https://www.pexels.com/license/",
+  "photos": [
+    {
+      "id": "12911205",
+      "url": "https://www.pexels.com/photo/woman-noting-in-calendar-12911205/",
+      "credit": "Mizuno K",
+      "desc": "Making notes on a calendar",
+      "file": "assets/stock/12911205.avif",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "id": "19905182",
+      "url": "https://www.pexels.com/photo/woman-writing-in-notebook-on-desk-19905182/",
+      "credit": "Ahmed",
+      "desc": "Planning in a notebook",
+      "file": "assets/stock/19905182.avif",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "id": "29648640",
+      "url": "https://www.pexels.com/photo/professional-consultation-at-beauty-clinic-29648640/",
+      "credit": "Alexander Mass",
+      "desc": "Taking notes during a beauty consultation",
+      "file": "assets/stock/29648640.avif",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "id": "31403887",
+      "url": "https://www.pexels.com/photo/close-up-of-woman-s-face-with-perfect-skin-31403887/",
+      "credit": "Alexey Dulin",
+      "desc": "A close portrait with natural skin detail",
+      "file": "assets/stock/31403887.avif",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "id": "36497925",
+      "url": "https://www.pexels.com/photo/relaxed-woman-enjoying-a-spa-facial-treatment-36497925/",
+      "credit": "Taiye Salawu",
+      "desc": "A sheet-mask facial treatment",
+      "file": "assets/stock/36497925.avif",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "id": "36930858",
+      "url": "https://www.pexels.com/photo/laser-hair-removal-procedure-close-up-36930858/",
+      "credit": "Kerim Eveyik",
+      "desc": "Close detail of a laser hair-removal device and cooling gel",
+      "file": "assets/stock/36930858.avif",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "id": "36930874",
+      "url": "https://www.pexels.com/photo/laser-hair-removal-procedure-in-beauty-clinic-36930874/",
+      "credit": "Kerim Eveyik",
+      "desc": "A laser hair-removal treatment on a leg",
+      "file": "assets/stock/36930874.avif",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "id": "37033485",
+      "url": "https://www.pexels.com/photo/luxury-spa-facial-treatment-in-istanbul-37033485/",
+      "credit": "Kerim Eveyik",
+      "desc": "Hands performing facial care",
+      "file": "assets/stock/37033485.avif",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "id": "37079563",
+      "url": "https://www.pexels.com/photo/professional-laser-hair-removal-treatment-37079563/",
+      "credit": "Kerim Eveyik",
+      "desc": "A laser epilation procedure in a treatment setting",
+      "file": "assets/stock/37079563.avif",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "id": "37229298",
+      "url": "https://www.pexels.com/photo/relaxing-facial-treatment-at-spa-37229298/",
+      "credit": "Dave Garcia",
+      "desc": "A close view of facial care",
+      "file": "assets/stock/37229298.avif",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "id": "39192384",
+      "url": "https://www.pexels.com/photo/doctor-consulting-patient-in-modern-office-39192384/",
+      "credit": "Vitaly Gariev",
+      "desc": "A consultation in a bright office",
+      "file": "assets/stock/39192384.avif",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "id": "4586740",
+      "url": "https://www.pexels.com/photo/a-woman-consulting-with-a-cosmetologist-doctor-4586740/",
+      "credit": "Anna Shvets",
+      "desc": "Two adults discussing skin care in a consultation",
+      "file": "assets/stock/4586740.avif",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "id": "4945038",
+      "url": "https://www.pexels.com/photo/woman-writing-on-a-notebook-4945038/",
+      "credit": "Nataliya Vaitkevich",
+      "desc": "A notebook planning detail",
+      "file": "assets/stock/4945038.avif",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "id": "5215008",
+      "url": "https://www.pexels.com/photo/woman-consulting-a-doctor-5215008/",
+      "credit": "Antoni Shkraba",
+      "desc": "A doctor and adult patient in conversation",
+      "file": "assets/stock/5215008.avif",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "id": "5659059",
+      "url": "https://www.pexels.com/photo/a-woman-holding-plastic-tubes-while-talking-to-the-client-lying-on-bed-5659059/",
+      "credit": "Ivan S",
+      "desc": "A skincare treatment conversation",
+      "file": "assets/stock/5659059.avif",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "id": "6560257",
+      "url": "https://www.pexels.com/photo/hands-relaxation-health-elegance-6560257/",
+      "credit": "Anna Tarazevich",
+      "desc": "Hands holding an oil bottle",
+      "file": "assets/stock/6560257.avif",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "id": "6925487",
+      "url": "https://www.pexels.com/photo/a-woman-with-a-skin-care-product-on-her-face-6925487/",
+      "credit": "Mike Murray",
+      "desc": "Applying cream during a skin-care routine",
+      "file": "assets/stock/6925487.avif",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "id": "7191981",
+      "url": "https://www.pexels.com/photo/black-businesswoman-taking-notes-in-planner-7191981/",
+      "credit": "SHVETS production",
+      "desc": "Taking notes in a planner",
+      "file": "assets/stock/7191981.avif",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "id": "7321720",
+      "url": "https://www.pexels.com/photo/person-applying-serum-on-her-hand-7321720/",
+      "credit": "Kaboompics",
+      "desc": "Serum applied to a hand",
+      "file": "assets/stock/7321720.avif",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "id": "7500035",
+      "url": "https://www.pexels.com/photo/photo-of-a-woman-wearing-activewear-stretching-7500035/",
+      "credit": "Mikhail Nilov",
+      "desc": "An adult stretching on a mat",
+      "file": "assets/stock/7500035.avif",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "id": "7691164",
+      "url": "https://www.pexels.com/photo/close-up-shot-of-skincare-products-7691164/",
+      "credit": "Roman Odintsov",
+      "desc": "Skincare products and a towel",
+      "file": "assets/stock/7691164.avif",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "id": "7901760",
+      "url": "https://www.pexels.com/photo/a-woman-writing-on-her-notebook-in-front-of-her-laptop-7901760/",
+      "credit": "Ivan S",
+      "desc": "Planning at a desk",
+      "file": "assets/stock/7901760.avif",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "id": "8330360",
+      "url": "https://www.pexels.com/photo/pouring-tea-into-glass-8330360/",
+      "credit": "Anna Pou",
+      "desc": "A quiet moment pouring tea",
+      "file": "assets/stock/8330360.avif",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "id": "8990301",
+      "url": "https://www.pexels.com/photo/woman-doing-skin-care-8990301/",
+      "credit": "Alena Darmel",
+      "desc": "An adult applying a skin-care product",
+      "file": "assets/stock/8990301.avif",
+      "license": "https://www.pexels.com/license/"
+    }
+  ],
+  "placements": [
+    {
+      "page": "northstar/approach/index.html",
+      "slot": 0,
+      "photoId": "7901760",
+      "file": "assets/stock/7901760.avif",
+      "source": "https://www.pexels.com/photo/a-woman-writing-on-her-notebook-in-front-of-her-laptop-7901760/",
+      "credit": "Ivan S",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "morrow/visit.html",
+      "slot": 0,
+      "photoId": "29648640",
+      "file": "assets/stock/29648640.avif",
+      "source": "https://www.pexels.com/photo/professional-consultation-at-beauty-clinic-29648640/",
+      "credit": "Alexander Mass",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "morrow/services.html",
+      "slot": 0,
+      "photoId": "4945038",
+      "file": "assets/stock/4945038.avif",
+      "source": "https://www.pexels.com/photo/woman-writing-on-a-notebook-4945038/",
+      "credit": "Nataliya Vaitkevich",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "morrow/services.html",
+      "slot": 1,
+      "photoId": "7500035",
+      "file": "assets/stock/7500035.avif",
+      "source": "https://www.pexels.com/photo/photo-of-a-woman-wearing-activewear-stretching-7500035/",
+      "credit": "Mikhail Nilov",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "morrow/services.html",
+      "slot": 2,
+      "photoId": "36497925",
+      "file": "assets/stock/36497925.avif",
+      "source": "https://www.pexels.com/photo/relaxed-woman-enjoying-a-spa-facial-treatment-36497925/",
+      "credit": "Taiye Salawu",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "morrow/service-restore.html",
+      "slot": 1,
+      "photoId": "6560257",
+      "file": "assets/stock/6560257.avif",
+      "source": "https://www.pexels.com/photo/hands-relaxation-health-elegance-6560257/",
+      "credit": "Anna Tarazevich",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "morrow/service-body.html",
+      "slot": 1,
+      "photoId": "7191981",
+      "file": "assets/stock/7191981.avif",
+      "source": "https://www.pexels.com/photo/black-businesswoman-taking-notes-in-planner-7191981/",
+      "credit": "SHVETS production",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "morrow/service-wellness.html",
+      "slot": 0,
+      "photoId": "39192384",
+      "file": "assets/stock/39192384.avif",
+      "source": "https://www.pexels.com/photo/doctor-consulting-patient-in-modern-office-39192384/",
+      "credit": "Vitaly Gariev",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "morrow/service-wellness.html",
+      "slot": 1,
+      "photoId": "19905182",
+      "file": "assets/stock/19905182.avif",
+      "source": "https://www.pexels.com/photo/woman-writing-in-notebook-on-desk-19905182/",
+      "credit": "Ahmed",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "morrow/about.html",
+      "slot": 0,
+      "photoId": "5659059",
+      "file": "assets/stock/5659059.avif",
+      "source": "https://www.pexels.com/photo/a-woman-holding-plastic-tubes-while-talking-to-the-client-lying-on-bed-5659059/",
+      "credit": "Ivan S",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "morrow/index.html",
+      "slot": 1,
+      "photoId": "8330360",
+      "file": "assets/stock/8330360.avif",
+      "source": "https://www.pexels.com/photo/pouring-tea-into-glass-8330360/",
+      "credit": "Anna Pou",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "morrow/index.html",
+      "slot": 2,
+      "photoId": "5215008",
+      "file": "assets/stock/5215008.avif",
+      "source": "https://www.pexels.com/photo/woman-consulting-a-doctor-5215008/",
+      "credit": "Antoni Shkraba",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "morrow/index.html",
+      "slot": 4,
+      "photoId": "37033485",
+      "file": "assets/stock/37033485.avif",
+      "source": "https://www.pexels.com/photo/luxury-spa-facial-treatment-in-istanbul-37033485/",
+      "credit": "Kerim Eveyik",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "vale/services/laser-hair-removal/index.html",
+      "slot": 0,
+      "photoId": "36930874",
+      "file": "assets/stock/36930874.avif",
+      "source": "https://www.pexels.com/photo/laser-hair-removal-procedure-in-beauty-clinic-36930874/",
+      "credit": "Kerim Eveyik",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "vale/services/laser-hair-removal/index.html",
+      "slot": 1,
+      "photoId": "29648640",
+      "file": "assets/stock/29648640.avif",
+      "source": "https://www.pexels.com/photo/professional-consultation-at-beauty-clinic-29648640/",
+      "credit": "Alexander Mass",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "vale/services/chemical-peels/index.html",
+      "slot": 1,
+      "photoId": "8990301",
+      "file": "assets/stock/8990301.avif",
+      "source": "https://www.pexels.com/photo/woman-doing-skin-care-8990301/",
+      "credit": "Alena Darmel",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "vale/services/custom-facial/index.html",
+      "slot": 0,
+      "photoId": "37229298",
+      "file": "assets/stock/37229298.avif",
+      "source": "https://www.pexels.com/photo/relaxing-facial-treatment-at-spa-37229298/",
+      "credit": "Dave Garcia",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "vale/services/custom-facial/index.html",
+      "slot": 1,
+      "photoId": "7691164",
+      "file": "assets/stock/7691164.avif",
+      "source": "https://www.pexels.com/photo/close-up-shot-of-skincare-products-7691164/",
+      "credit": "Roman Odintsov",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "vale/services/index.html",
+      "slot": 0,
+      "photoId": "37033485",
+      "file": "assets/stock/37033485.avif",
+      "source": "https://www.pexels.com/photo/luxury-spa-facial-treatment-in-istanbul-37033485/",
+      "credit": "Kerim Eveyik",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "vale/services/index.html",
+      "slot": 1,
+      "photoId": "31403887",
+      "file": "assets/stock/31403887.avif",
+      "source": "https://www.pexels.com/photo/close-up-of-woman-s-face-with-perfect-skin-31403887/",
+      "credit": "Alexey Dulin",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "vale/services/index.html",
+      "slot": 2,
+      "photoId": "37079563",
+      "file": "assets/stock/37079563.avif",
+      "source": "https://www.pexels.com/photo/professional-laser-hair-removal-treatment-37079563/",
+      "credit": "Kerim Eveyik",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "vale/consultation/index.html",
+      "slot": 0,
+      "photoId": "5215008",
+      "file": "assets/stock/5215008.avif",
+      "source": "https://www.pexels.com/photo/woman-consulting-a-doctor-5215008/",
+      "credit": "Antoni Shkraba",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "vale/about/index.html",
+      "slot": 1,
+      "photoId": "4586740",
+      "file": "assets/stock/4586740.avif",
+      "source": "https://www.pexels.com/photo/a-woman-consulting-with-a-cosmetologist-doctor-4586740/",
+      "credit": "Anna Shvets",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "vale/index.html",
+      "slot": 1,
+      "photoId": "36497925",
+      "file": "assets/stock/36497925.avif",
+      "source": "https://www.pexels.com/photo/relaxed-woman-enjoying-a-spa-facial-treatment-36497925/",
+      "credit": "Taiye Salawu",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "vale/index.html",
+      "slot": 2,
+      "photoId": "7321720",
+      "file": "assets/stock/7321720.avif",
+      "source": "https://www.pexels.com/photo/person-applying-serum-on-her-hand-7321720/",
+      "credit": "Kaboompics",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "vale/index.html",
+      "slot": 3,
+      "photoId": "36930858",
+      "file": "assets/stock/36930858.avif",
+      "source": "https://www.pexels.com/photo/laser-hair-removal-procedure-close-up-36930858/",
+      "credit": "Kerim Eveyik",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "vale/index.html",
+      "slot": 4,
+      "photoId": "6925487",
+      "file": "assets/stock/6925487.avif",
+      "source": "https://www.pexels.com/photo/a-woman-with-a-skin-care-product-on-her-face-6925487/",
+      "credit": "Mike Murray",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "forma/visit.html",
+      "slot": 0,
+      "photoId": "7901760",
+      "file": "assets/stock/7901760.avif",
+      "source": "https://www.pexels.com/photo/a-woman-writing-on-her-notebook-in-front-of-her-laptop-7901760/",
+      "credit": "Ivan S",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "forma/services.html",
+      "slot": 0,
+      "photoId": "39192384",
+      "file": "assets/stock/39192384.avif",
+      "source": "https://www.pexels.com/photo/doctor-consulting-patient-in-modern-office-39192384/",
+      "credit": "Vitaly Gariev",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "forma/services.html",
+      "slot": 1,
+      "photoId": "6925487",
+      "file": "assets/stock/6925487.avif",
+      "source": "https://www.pexels.com/photo/a-woman-with-a-skin-care-product-on-her-face-6925487/",
+      "credit": "Mike Murray",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "forma/services.html",
+      "slot": 2,
+      "photoId": "4945038",
+      "file": "assets/stock/4945038.avif",
+      "source": "https://www.pexels.com/photo/woman-writing-on-a-notebook-4945038/",
+      "credit": "Nataliya Vaitkevich",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "forma/service-planning.html",
+      "slot": 0,
+      "photoId": "19905182",
+      "file": "assets/stock/19905182.avif",
+      "source": "https://www.pexels.com/photo/woman-writing-in-notebook-on-desk-19905182/",
+      "credit": "Ahmed",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "forma/service-planning.html",
+      "slot": 1,
+      "photoId": "12911205",
+      "file": "assets/stock/12911205.avif",
+      "source": "https://www.pexels.com/photo/woman-noting-in-calendar-12911205/",
+      "credit": "Mizuno K",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "forma/service-injectables.html",
+      "slot": 0,
+      "photoId": "31403887",
+      "file": "assets/stock/31403887.avif",
+      "source": "https://www.pexels.com/photo/close-up-of-woman-s-face-with-perfect-skin-31403887/",
+      "credit": "Alexey Dulin",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "forma/service-injectables.html",
+      "slot": 1,
+      "photoId": "8990301",
+      "file": "assets/stock/8990301.avif",
+      "source": "https://www.pexels.com/photo/woman-doing-skin-care-8990301/",
+      "credit": "Alena Darmel",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "forma/service-consultation.html",
+      "slot": 0,
+      "photoId": "5215008",
+      "file": "assets/stock/5215008.avif",
+      "source": "https://www.pexels.com/photo/woman-consulting-a-doctor-5215008/",
+      "credit": "Antoni Shkraba",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "forma/service-consultation.html",
+      "slot": 1,
+      "photoId": "7191981",
+      "file": "assets/stock/7191981.avif",
+      "source": "https://www.pexels.com/photo/black-businesswoman-taking-notes-in-planner-7191981/",
+      "credit": "SHVETS production",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "forma/index.html",
+      "slot": 1,
+      "photoId": "5659059",
+      "file": "assets/stock/5659059.avif",
+      "source": "https://www.pexels.com/photo/a-woman-holding-plastic-tubes-while-talking-to-the-client-lying-on-bed-5659059/",
+      "credit": "Ivan S",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "forma/index.html",
+      "slot": 2,
+      "photoId": "4586740",
+      "file": "assets/stock/4586740.avif",
+      "source": "https://www.pexels.com/photo/a-woman-consulting-with-a-cosmetologist-doctor-4586740/",
+      "credit": "Anna Shvets",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "page": "forma/index.html",
+      "slot": 4,
+      "photoId": "29648640",
+      "file": "assets/stock/29648640.avif",
+      "source": "https://www.pexels.com/photo/professional-consultation-at-beauty-clinic-29648640/",
+      "credit": "Alexander Mass",
+      "license": "https://www.pexels.com/license/"
+    }
+  ],
+  "aliases": {
+    "vale/about.html": "vale/about/index.html",
+    "vale/visit.html": "vale/consultation/index.html",
+    "vale/services.html": "vale/services/index.html",
+    "vale/service-facial.html": "vale/services/custom-facial/index.html",
+    "vale/service-peels.html": "vale/services/chemical-peels/index.html",
+    "vale/service-laser.html": "vale/services/laser-hair-removal/index.html"
+  }
+}
