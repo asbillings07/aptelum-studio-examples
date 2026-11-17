@@ -14,6 +14,8 @@ The Studio gallery uses its approved folded-ribbon logo, a quiet solid-blue Apte
 
 Only public example assets and their minimal build/check tooling belong here; private company records and real customer data stay outside this repository. Vercel serves only the explicit public inventory built into `dist/`. These designs do not establish clinical/client approval, accessibility conformance, production readiness or exclusive rights to names/assets. Aptelum Studio pricing remains provisional.
 
-GitHub Pages publishes the root of `main`; a push changes the public examples. Keep Pages available while reviewing the Vercel replacement. No custom domain is connected to Pages. Production will use Vercel after separate approval; `aptelumstudio.com` remains reserved for that launch.
+GitHub Pages publishes the root of the preserved `pages-preserved-2026-11-16` branch. Keep that branch and Pages settings unchanged while reviewing the Vercel replacement. No custom domain is connected to Pages. Production will use Vercel after separate approval; `aptelumstudio.com` remains reserved for that launch.
+
+The [November 17 ribbon refinement](docs/design/ribbon-refinement.md) updates the shared Studio header and favicon assets. It does not change the six example identities or authorize production.
 
 The [Vercel preview setup and launch gates](docs/vercel-preview.md) preserve the approved site while adapting its URLs and hosting disclosure in the generated output. Run `node scripts/build-preview.mjs` to build and `python3 -m unittest discover -s tests -v` to verify. The build refuses production, and Vercel Git deployment is disabled for `main`. No production promotion, DNS change or Pages retirement is included. Actual preview setup and review evidence belong to the PR; configuration files alone do not prove deployment.

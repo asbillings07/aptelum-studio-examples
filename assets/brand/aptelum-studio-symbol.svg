@@ -3,7 +3,7 @@
 <linearGradient id="fold" x1="251" y1="90" x2="377" y2="194" gradientUnits="userSpaceOnUse"><stop stop-color="#77A6D6"/><stop offset="1" stop-color="#638AC4"/></linearGradient>
 <linearGradient id="iris" x1="32" y1="181" x2="261" y2="292" gradientUnits="userSpaceOnUse"><stop stop-color="#6558AE"/><stop offset="1" stop-color="#7B65CA"/></linearGradient>
 <linearGradient id="edge" x1="35" y1="346" x2="303" y2="277" gradientUnits="userSpaceOnUse"><stop stop-color="#9270DD"/><stop offset="1" stop-color="#9A73E5"/></linearGradient>
-</defs><g transform="translate(10 11)"><path fill="url(#fold)" d="M180 108C253 91 307 78 359 61C378 64 391 70 397 84C411 113 398 168 378 197C344 150 283 138 180 108Z"/>
-<path fill="url(#ice)" d="M0 208C0 151 1 105 27 66C52 28 95 17 151 11C207 5 268 0 308 0C366-1 388 41 397 84C359 61 307 78 253 91C170 111 62 139 0 208Z"/>
+</defs><g transform="translate(10 11)"><path fill="url(#fold)" d="M180 108C253 91 307 78 359 61C378 64 391 70 397 84C406 127 402 172 378 197C344 150 283 138 180 108Z"/>
+<path fill="url(#ice)" d="M0 208C0 151 1 105 27 66C52 28 95 17 151 11C207 5 268 0 308 0C366 0 388 41 397 84C359 61 307 78 253 91C170 111 62 139 0 208Z"/>
 <path fill="url(#iris)" d="M42 171C79 205 177 224 279 246C309 253 330 270 332 293C333 333 309 357 273 357H81C22 357 0 324 0 274V208C13 193 27 180 42 171Z"/>
-<path fill="url(#edge)" d="M16 322C52 337 115 316 170 296C214 279 253 264 295 252C320 263 334 278 332 303C330 336 308 357 273 357H81C52 357 29 343 16 322Z"/></g></svg>
+<path fill="url(#edge)" d="M11.52 324.816C48 341 115 316 170 296C214 279 253 264 295 252C320 263 334 278 332 303C330 336 308 357 273 357H81C45.6 357 23.52 345.12 11.52 324.816Z"/></g></svg>

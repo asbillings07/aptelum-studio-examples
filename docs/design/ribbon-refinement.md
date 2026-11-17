@@ -1,0 +1,11 @@
+# Studio ribbon refinement
+
+Owner: @asbillings07. November 17, 2026. The owner approved smoothing the lower-left purple fold and upper-right blue curve, then authorized a draft PR, independent review and a protected Preview update after green CI.
+
+Replace the existing header and symbol SVGs with the approved exports. The Industries, Wellness and Technology pages already use these shared assets, so their markup and layout need no change. The symbol also supplies their favicon. Lettering, colors, accessible names, dimensions, official blue company attribution and all client identities are preserved. The Studio gallery remains light; separate dark logo exports remain available in Studio's canonical asset library.
+
+The two SVGs must match the corresponding canonical Studio exports byte-for-byte. Run the existing preview tests and check the rendered header at desktop and phone widths. Independent review and CI apply to the exact source candidate; retain the PR as draft for owner review.
+
+Current publication scope is one protected Preview in the existing Aptelum Labs / aptelum-studio project. Use the explicit public file inventory; do not upload documentation, source policies, credentials or private records. Preserve all-deployment protection and existing access settings. The client-review address and deployment remain separate. GitHub Pages remains on `pages-preserved-2026-11-16`; leave DNS and production unchanged. Pricing remains provisional.
+
+The older [preview setup record](../vercel-preview.md) describes the original initialization sequence. For this update, verify live provider state, review the immutable candidate, push for CI, and publish once only after green CI. Automatic Git deployment is currently disabled; use one manual Preview from the reviewed commit after CI. Do not reconnect Git or change provider settings just to publish this revision. AB is responsible for reconciliation: stop on wrong project/environment, failed protection, unexpected effects or a failed build. Inspect an uncertain result before retrying; allow at most two readbacks and one justified retry. Retain the prior protected Preview for recovery; stop temporary local servers after verification.
