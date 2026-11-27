@@ -4,7 +4,7 @@
   "buildCommand": "node scripts/build-preview.mjs",
   "installCommand": "",
   "outputDirectory": "dist",
-  "git": { "deploymentEnabled": { "main": false } },
+  "git": { "deploymentEnabled": { "main": false, "design/5-ruma-wellness-benchmark": false } },
   "headers": [
     {
       "source": "/(.*)",

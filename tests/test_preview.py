@@ -1,6 +1,7 @@
 """Verify the deployed artifact and refusal paths without any provider access."""
 import base64
 import hashlib
+from html import unescape
 from html.parser import HTMLParser
 import json
 import os
@@ -73,9 +74,13 @@ class PreviewTests(unittest.TestCase):
                 if url.fragment and target in pages:
                     self.assertIn(unquote(url.fragment), pages[target].ids, (path, link))
             for script in page.scripts:
-                self.assertEqual(script.get('src'), '/assets/technology-theme.js', path)
-                digest = base64.b64encode(hashlib.sha256((output / 'assets/technology-theme.js').read_bytes()).digest()).decode()
+                allowed = {'/assets/technology-theme.js'}
+                if path.split('/')[0] in {'forma', 'vale', 'morrow'}:
+                    allowed.add('/assets/wellness-navigation.js')
+                self.assertIn(script.get('src'), allowed, path)
+                digest = base64.b64encode(hashlib.sha256((output / script['src'].lstrip('/')).read_bytes()).digest()).decode()
                 self.assertEqual(script.get('integrity'), 'sha256-' + digest, path)
+                self.assertIn("'sha256-" + digest + "'", unescape(text), path)
             # The only prose change is the hosting disclosure, not a design rewrite.
             def normalized(value):
                 value = re.sub(r'<p>[\s\S]*?</p>', lambda m: '' if ('GitHub Pages' in m[0] or 'Vercel hosts this preview' in m[0]) else m[0], value)
@@ -94,7 +99,8 @@ class PreviewTests(unittest.TestCase):
         self.assertNotIn('github.io', (output / 'vale/sitemap.xml').read_text())
         self.assertIn('https://studio-test.vercel.app/vale/', (output / 'vale/sitemap.xml').read_text())
         config = json.loads((ROOT / 'vercel.json').read_text())
-        self.assertEqual(config['git']['deploymentEnabled'], {'main': False})
+        self.assertEqual(config['git']['deploymentEnabled'], {
+            'main': False, 'design/5-ruma-wellness-benchmark': False})
         self.assertEqual(config['outputDirectory'], 'dist')
 
     def fixture(self):
