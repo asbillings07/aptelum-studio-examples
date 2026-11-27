@@ -38,3 +38,12 @@ Local verification: playback observed in Chrome, including a working pause/play 
 Protected preview uploads are authorized by the current conversation after independent review and green current-source CI. Keep both PRs draft, issue #2 open and setup pricing provisional. No merge, Pages change, DNS change, production launch, live payments, customer-alias change or sharing/access expansion is authorized. The operator inspects project protection and source revisions before each upload, inspects uncertain outcomes before retrying, and stops on any unexpected provider change. Recovery is a source revert and a separately authorized preview replacement; no existing deployment is deleted.
 
 [Stock footage provenance](background-video.json): Forma is a beauty portrait (583,092 bytes), Vale a skin-care routine (1,032,644 bytes), and Morrow a close detail of outdoor movement (1,731,317 bytes). Each 9–10 second clip is under the 2.5 MB per-file budget. Posters add 13,810, 11,982 and 80,916 bytes respectively. These video-derived stills replace the hero photos; earlier hero files are retained as rollback assets. The public artifact contains 132 files.
+
+
+### Wider, calmer footage refinement — November 27
+
+Owner feedback replaces the first tight hero clips with wider context: Mirror Mirror uses a treatment-room view, Forma a two-person consultation, Vale a clinician-led skin-care scene, and Morrow a distant meditation scene in a forest landscape. The clinical films are medium/wider compositions, not a tour of the actual practice. No RUMA assets were copied. Morrow no longer shows a tightly cropped body. Source records and hashes identify the replacement clips; previous selections remain in git history.
+
+Clips play at a gentle 1.2–1.4 times their source duration. No artificial zoom or simulated still-image movement is added. At 1000px and below, a 16:9 film area preserves the complete scene above the existing hero copy rather than enlarging a landscape video to fill a tall phone screen. Desktop keeps the approved composition; Forma's video and poster now share exactly the same 72% inset frame. Stock disclosure, first-frame fallback, manual pause/play and reduced-motion/data-saving safeguards remain.
+
+Scope is the same two draft PRs and protected previews only. Setup pricing remains provisional, issue #2 stays open, and Pages, DNS, production and live payments are unchanged. These stock scenes do not establish a practice's staff, facilities, equipment or offered services. Actual practice footage and owner visual QA remain separate.

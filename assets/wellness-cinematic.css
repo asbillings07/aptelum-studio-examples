@@ -150,5 +150,22 @@
 :is(#main,#mm-content) #cinematic-home .hero>video{width:100%;height:100%;object-fit:cover;opacity:0;pointer-events:none}
 :is(#main,#mm-content) #cinematic-home .hero.video-ready>video{opacity:1}
 :is(#main,#mm-content) #cinematic-home .video-disclosure{position:absolute;left:6%;bottom:25px;z-index:2;color:#fffaf0;background:#171713ba;padding:4px 8px;font:400 11px/1.5 var(--body);border-radius:4px;max-width:48%}
-:is(#main,#mm-content) #cinematic-home .hero>:is(img,video){object-position:62% center}
-@container(max-width:560px){:is(#main,#mm-content) #cinematic-home .hero>:is(img,video){object-position:60% center}:is(#main,#mm-content) #cinematic-home.forma .hero>:is(img,video){object-position:48% center}:is(#main,#mm-content) #cinematic-home.vale .hero>:is(img,video){object-position:75% center}}
+
+:is(#main,#mm-content) #cinematic-home.forma .hero:after{background:linear-gradient(90deg,#4e1f2c 28%,#4e1f2c00 75%)}
+/* Wider footage, with matching video/poster frames and no artificial zoom.
+   Small screens keep the landscape scene intact above the existing hero copy. */
+:is(#main,#mm-content) #cinematic-home .hero>:is(img,video){object-position:center}
+:is(#main,#mm-content) #cinematic-home.forma .hero>:is(img,video){width:72%;inset:0 0 0 28%;object-position:center}
+:is(#main,#mm-content) #cinematic-home:is(.vale,.morrow) .hero>:is(img,video){object-position:center}
+@container(max-width:1000px){
+  :is(#main,#mm-content) #cinematic-home .hero{min-height:0;padding-top:56.25cqw;background:#22251f}
+  :is(#main,#mm-content) #cinematic-home.forma .hero{background:#4e1f2c}
+  :is(#main,#mm-content) #cinematic-home.vale .hero{background:#38281a}
+  :is(#main,#mm-content) #cinematic-home.morrow .hero{background:#16241b}
+  :is(#main,#mm-content) #cinematic-home .hero>:is(img,video),
+  :is(#main,#mm-content) #cinematic-home:is(.forma,.vale,.morrow) .hero>:is(img,video){inset:0 0 auto;width:100%;height:56.25cqw;object-position:center;object-fit:contain}
+  :is(#main,#mm-content) #cinematic-home .hero:after,
+  :is(#main,#mm-content) #cinematic-home:is(.forma,.vale,.morrow) .hero:after{height:56.25cqw;background:none}
+  :is(#main,#mm-content) #cinematic-home .hero-copy,
+  :is(#main,#mm-content) #cinematic-home:is(.forma,.vale,.morrow) .hero-copy{max-width:100%;padding:32px 7% 88px}
+}
