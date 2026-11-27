@@ -22,4 +22,4 @@ jobs:
       - name: Verify preview build, routes and production rejection
         run: python3 -m unittest discover -s tests -v
       - name: Verify wellness menu dismissal and focus
-        run: node --test tests/wellness-navigation.test.cjs
+        run: node --test tests/wellness-navigation.test.cjs tests/hero-motion.test.cjs

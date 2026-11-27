@@ -51,7 +51,7 @@ class PreviewTests(unittest.TestCase):
         actual = sorted(str(p.relative_to(output)) for p in output.rglob('*') if p.is_file())
         self.assertEqual(actual, sorted(inventory))
         pages = {p: Page((output / p).read_text()) for p in inventory if p.endswith('.html')}
-        self.assertEqual(len(pages), 52)
+        self.assertEqual(len(pages), 53)
         for brand in ('forma', 'vale', 'morrow', 'threadline', 'northstar', 'vector-harbor'):
             self.assertIn(f'{brand}/index.html', pages)
         for path, page in pages.items():
@@ -77,6 +77,8 @@ class PreviewTests(unittest.TestCase):
                 allowed = {'/assets/technology-theme.js'}
                 if path.split('/')[0] in {'forma', 'vale', 'morrow'}:
                     allowed.add('/assets/wellness-navigation.js')
+                if path in {'forma/index.html', 'vale/index.html', 'morrow/index.html'}:
+                    allowed.add('/assets/hero-motion.js')
                 self.assertIn(script.get('src'), allowed, path)
                 digest = base64.b64encode(hashlib.sha256((output / script['src'].lstrip('/')).read_bytes()).digest()).decode()
                 self.assertEqual(script.get('integrity'), 'sha256-' + digest, path)

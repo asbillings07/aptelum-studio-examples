@@ -198,33 +198,6 @@
   ],
   "placements": [
     {
-      "page": "forma/index.html",
-      "slot": 1,
-      "photoId": "5659059",
-      "file": "assets/stock/5659059.avif",
-      "source": "https://www.pexels.com/photo/a-woman-holding-plastic-tubes-while-talking-to-the-client-lying-on-bed-5659059/",
-      "credit": "Ivan S",
-      "license": "https://www.pexels.com/license/"
-    },
-    {
-      "page": "forma/index.html",
-      "slot": 2,
-      "photoId": "4586740",
-      "file": "assets/stock/4586740.avif",
-      "source": "https://www.pexels.com/photo/a-woman-consulting-with-a-cosmetologist-doctor-4586740/",
-      "credit": "Anna Shvets",
-      "license": "https://www.pexels.com/license/"
-    },
-    {
-      "page": "forma/index.html",
-      "slot": 4,
-      "photoId": "29648640",
-      "file": "assets/stock/29648640.avif",
-      "source": "https://www.pexels.com/photo/professional-consultation-at-beauty-clinic-29648640/",
-      "credit": "Alexander Mass",
-      "license": "https://www.pexels.com/license/"
-    },
-    {
       "page": "forma/service-consultation.html",
       "slot": 0,
       "photoId": "5215008",
@@ -324,24 +297,6 @@
       "license": "https://www.pexels.com/license/"
     },
     {
-      "page": "morrow/index.html",
-      "slot": 1,
-      "photoId": "5215008",
-      "file": "assets/stock/5215008.avif",
-      "source": "https://www.pexels.com/photo/woman-consulting-a-doctor-5215008/",
-      "credit": "Antoni Shkraba",
-      "license": "https://www.pexels.com/license/"
-    },
-    {
-      "page": "morrow/index.html",
-      "slot": 3,
-      "photoId": "37033485",
-      "file": "assets/stock/37033485.avif",
-      "source": "https://www.pexels.com/photo/luxury-spa-facial-treatment-in-istanbul-37033485/",
-      "credit": "Kerim Eveyik",
-      "license": "https://www.pexels.com/license/"
-    },
-    {
       "page": "morrow/service-restore.html",
       "slot": 1,
       "photoId": "6560257",
@@ -423,39 +378,12 @@
       "license": "https://www.pexels.com/license/"
     },
     {
-      "page": "vale/index.html",
-      "slot": 1,
-      "photoId": "36497925",
-      "file": "assets/stock/36497925.avif",
-      "source": "https://www.pexels.com/photo/relaxed-woman-enjoying-a-spa-facial-treatment-36497925/",
-      "credit": "Taiye Salawu",
-      "license": "https://www.pexels.com/license/"
-    },
-    {
-      "page": "vale/index.html",
-      "slot": 2,
+      "page": "vale/services/chemical-peels/index.html",
+      "slot": 0,
       "photoId": "7321720",
       "file": "assets/stock/7321720.avif",
       "source": "https://www.pexels.com/photo/person-applying-serum-on-her-hand-7321720/",
       "credit": "Kaboompics",
-      "license": "https://www.pexels.com/license/"
-    },
-    {
-      "page": "vale/index.html",
-      "slot": 3,
-      "photoId": "36930858",
-      "file": "assets/stock/36930858.avif",
-      "source": "https://www.pexels.com/photo/laser-hair-removal-procedure-close-up-36930858/",
-      "credit": "Kerim Eveyik",
-      "license": "https://www.pexels.com/license/"
-    },
-    {
-      "page": "vale/index.html",
-      "slot": 5,
-      "photoId": "6925487",
-      "file": "assets/stock/6925487.avif",
-      "source": "https://www.pexels.com/photo/a-woman-with-a-skin-care-product-on-her-face-6925487/",
-      "credit": "Mike Murray",
       "license": "https://www.pexels.com/license/"
     },
     {

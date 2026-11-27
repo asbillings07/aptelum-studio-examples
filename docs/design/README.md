@@ -1,5 +1,7 @@
 # Brand refinements and photography
 
+Current wellness direction: [November 27 approved photographic compositions](wellness-cinematic.md). The record below describes the earlier November 12 six-example increment; its counts, typography and PR status are historical.
+
 The owner approved the November 12, 2026 local desktop/mobile proposals for all six examples. This increment integrates that design into the existing static source. It does not change Pages/main, DNS, pricing, discovery issue #2 or production launch authority.
 
 - **Forma:** precise Manrope typography and fine geometric marks. Its consultation photograph precedes the final invitation, with 48–72px separation. Avery's fictional portrait appears once, on the homepage; the About page retains the provider information without repeating the portrait.

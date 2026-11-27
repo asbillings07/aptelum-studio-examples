@@ -11,3 +11,7 @@ Run `python3 -m unittest discover -s tests -v` and `node --test tests/wellness-n
 The exact review branch `design/5-ruma-wellness-benchmark` disables automatic Vercel deployment, as does the existing `main` rule. GitHub Pages continues to use the preserved branch; no deployment or domain change is part of this draft. Keep this PR draft until independent review and human visual QA are complete.
 
 Visual QA remains pending at 320, 390, 768, 1024, 1440 and 1920px: light/dark/system, native menus, focus visibility, image crops, page rhythm, and service-to-consultation journeys. No RUMA photographs, copy or assets are included.
+
+## November 27 superseding design
+
+The owner approved a more photographic interactive study. See [the implementation record](wellness-cinematic.md) for the final compositions, new assets, motion behavior and current local QA. Earlier pending-visual statements above describe the preceding revision.
