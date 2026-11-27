@@ -51,7 +51,7 @@
 :is(#studio-practices, body.vale-story) .vale-routine{display:grid;grid-template-columns:1.1fr 1fr;gap:7%;align-items:center;background:var(--wash);padding:36px;border-radius:20px}
 :is(#studio-practices, body.vale-story) .vale-routine img{aspect-ratio:1.6;border-radius:8px}
 :is(#studio-practices, body.vale-story) .vale-routine>div{display:grid;gap:18px}
-body.vale-story .story-invitation{border-radius:55px 16px 55px 16px;background:var(--wash)}
+:is(#studio-practices, body.vale-story).vale-story .story-invitation{border-radius:55px 16px 55px 16px;background:var(--wash)}
 :is(#studio-practices, body.vale-story) .morrow-opening{padding-block:20px 10px;text-align:center}
 :is(#studio-practices, body.vale-story) .morrow-opening>div{display:grid;justify-items:center;gap:20px;margin:auto}
 :is(#studio-practices, body.vale-story) .morrow-opening h1{font-size:clamp(43px,5.1vw,72px);max-width:20ch}
@@ -66,7 +66,7 @@ body.vale-story .story-invitation{border-radius:55px 16px 55px 16px;background:v
 :is(#studio-practices, body.vale-story) .morrow-continuity{padding:clamp(30px,5vw,70px);text-align:center;background:var(--practice-surface);border-radius:80px 24px}
 :is(#studio-practices, body.vale-story) .morrow-continuity>*{margin-inline:auto!important}
 :is(#studio-practices, body.vale-story) .morrow-continuity>*+*{margin-top:22px!important}
-:is(#studio-practices, body.vale-story) .morrow .story-invitation{border-radius:40px;background:var(--soft)}
+:is(#studio-practices, body.vale-story) .morrow .story-invitation{border-radius:40px;background:var(--practice-surface)}
 :is(#studio-practices, body.vale-story) .service-experience>p{max-width:64ch;margin-block:18px}
 :is(#studio-practices, body.vale-story) .service-experience dl{margin-top:30px}
 :is(#studio-practices, body.vale-story) .service-experience dl>div{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:7%;padding:24px 0;border-top:1px solid var(--line)}
