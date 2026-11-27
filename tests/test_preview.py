@@ -33,7 +33,7 @@ class Page(HTMLParser):
         self.tags.append(tag)
         if 'id' in attrs:
             self.ids.add(attrs['id'])
-        for name in ('href', 'src'):
+        for name in ('href', 'src', 'poster', 'data-video-src'):
             if attrs.get(name):
                 self.links.append(attrs[name])
         if tag == 'script':
@@ -104,6 +104,23 @@ class PreviewTests(unittest.TestCase):
         self.assertEqual(config['git']['deploymentEnabled'], {
             'main': False, 'design/5-ruma-wellness-benchmark': False})
         self.assertEqual(config['outputDirectory'], 'dist')
+
+    def test_local_licensed_video_and_still_fallbacks(self):
+        records = json.loads((ROOT / 'docs/design/background-video.json').read_text())
+        self.assertEqual({r['brand'] for r in records}, {'forma', 'vale', 'morrow'})
+        for record in records:
+            self.assertEqual(record['license'], 'https://www.pexels.com/license/')
+            self.assertTrue(record['author'])
+            page = Page((ROOT / record['brand'] / 'index.html').read_text())
+            self.assertEqual(page.tags.count('video'), 1)
+            text = (ROOT / record['brand'] / 'index.html').read_text()
+            self.assertIn('muted loop playsinline preload="none"', text)
+            self.assertIn("media-src 'self'", text)
+            self.assertIn('Illustrative stock footage', text)
+            for name, evidence in record['files'].items():
+                data = (ROOT / 'assets' / name).read_bytes()
+                self.assertEqual(hashlib.sha256(data).hexdigest(), evidence['sha256'])
+                self.assertLessEqual(len(data), 2500000)
 
     def fixture(self):
         tmp = tempfile.TemporaryDirectory()

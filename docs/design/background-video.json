@@ -1,0 +1,62 @@
+[
+  {
+    "brand": "forma",
+    "source": "https://www.pexels.com/video/woman-with-beautiful-skin-3763029/",
+    "author": "Shiny Diamond",
+    "license": "https://www.pexels.com/license/",
+    "reviewed": "2026-11-27",
+    "source_sha256": "0eaf5806facb6ccf96af31260ecb2d257b52638c1f5106ddd6b95b199c771b76",
+    "use": "Illustrative stock; no endorsement, actual practice or patient outcome implied.",
+    "processing": "1s start; 10s H.264 1280x720 24fps; no audio; faststart; first-frame WebP poster.",
+    "files": {
+      "forma-hero-video.mp4": {
+        "sha256": "2b19ab57eddfc50fa027f7477b4ddddf89ed35361e0cd2c6b953e72b2a2a8f56",
+        "bytes": 583092
+      },
+      "forma-hero-poster.webp": {
+        "sha256": "6c66e73bd80c8b49ca21db22332421b3be218cf453ff24ba38578a61a1013247",
+        "bytes": 13810
+      }
+    }
+  },
+  {
+    "brand": "vale",
+    "source": "https://www.pexels.com/video/close-up-video-of-woman-doing-a-skin-care-routine-5927886/",
+    "author": "Polina Kovaleva",
+    "license": "https://www.pexels.com/license/",
+    "reviewed": "2026-11-27",
+    "source_sha256": "56b63e8b78e63294557f8af26c4e65b206f340156c762ef2aab3e74c16edd21c",
+    "use": "Illustrative stock; no endorsement, actual practice or patient outcome implied.",
+    "processing": "1s start; 10s H.264 1280x720 24fps; no audio; faststart; first-frame WebP poster.",
+    "files": {
+      "vale-hero-video.mp4": {
+        "sha256": "30e56a90f4cf7dc57c21b052c45be6e725c346194f71217d7414cfb7e3b502bb",
+        "bytes": 1032644
+      },
+      "vale-hero-poster.webp": {
+        "sha256": "0703764befbc9a75ed29e6a7b02c3e623e4034dcce09f88cb1473e23212140fe",
+        "bytes": 11982
+      }
+    }
+  },
+  {
+    "brand": "morrow",
+    "source": "https://www.pexels.com/video/woman-doing-a-yoga-on-the-outdoor-4928476/",
+    "author": "Ketut Subiyanto",
+    "license": "https://www.pexels.com/license/",
+    "reviewed": "2026-11-27",
+    "source_sha256": "85ec60fc3c89ec346313cd22fc3f35987f7a4286c4a4bf345c938e1fb575b2f9",
+    "use": "Illustrative outdoor movement detail; no actual practice, endorsement or outcome implied.",
+    "processing": "1s start; 9s H.264 1280x720 24fps; no audio; faststart; first-frame WebP poster.",
+    "files": {
+      "morrow-hero-video.mp4": {
+        "sha256": "e15e09e463236b5306f1f66541e681c099b1c76b54674d56a00cff974fbc23e5",
+        "bytes": 1731317
+      },
+      "morrow-hero-poster.webp": {
+        "sha256": "a001955a90282a524ce5edee022a247981512f36c5029de6653ae2ddc0c7304e",
+        "bytes": 80916
+      }
+    }
+  }
+]
