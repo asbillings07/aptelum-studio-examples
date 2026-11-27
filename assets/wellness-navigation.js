@@ -22,7 +22,11 @@
     });
     const wide = matchMedia('(min-width: 1081px)');
     wide.addEventListener('change', event => {
-      if (event.matches) close();
+      if (!event.matches) return;
+      const focusWasInside = menu.contains(document.activeElement);
+      close();
+      // Both panel and trigger disappear at desktop width. Preserve a visible focus.
+      if (focusWasInside) menu.closest('header').querySelector('.brand').focus();
     });
   }
 })();

@@ -87,7 +87,7 @@
  #studio-practices .forma .menu>nav,#studio-practices .morrow .menu>nav,body.vale-story .mobile-menu>nav{position:absolute;z-index:30;right:0;top:calc(100% - 8px);width:min(360px,100%);max-height:min(65vh,460px);overflow:auto;margin:0!important;display:grid;gap:0;padding:20px;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:12px;box-shadow:0 16px 40px #0002}
  #studio-practices .menu nav a,body.vale-story .mobile-menu nav a{padding:15px 8px;min-height:44px;border-bottom:1px solid var(--line)}
  #studio-practices .menu nav a:last-child,body.vale-story .mobile-menu nav a:last-child{border:0}
- #studio-practices .header-consultation,body.vale-story .header-action{order:2;flex:0 1 auto;white-space:normal;font-size:13px;margin-left:auto}
+ #studio-practices .header-consultation,body.vale-story .header-consultation{order:2;flex:0 1 auto;white-space:normal;font-size:13px;margin-left:auto}
 }
 @media(max-width:800px){
 :is(#studio-practices, body.vale-story) .story-hero{grid-template-columns:1fr;gap:30px;padding-top:20px}
