@@ -1,0 +1,62 @@
+[
+  {
+    "brand": "forma",
+    "source": "https://www.pexels.com/video/cosmetologist-talking-to-her-patient-4824010/",
+    "author": "Anna Shvets",
+    "license": "https://www.pexels.com/license/",
+    "reviewed": "2026-11-27",
+    "source_sha256": "6edaa6449e117a7c435779a5237c969661869333d5ae16addbd851dd5af2bc86",
+    "use": "Illustrative stock; no endorsement, actual practice, specific equipment offering or patient outcome implied.",
+    "processing": "8s start; 8s source slowed 1.2x to approximately 9.6s; H.264 1280x720 24fps; no audio; faststart; first-frame WebP poster.",
+    "files": {
+      "forma-hero-video.mp4": {
+        "sha256": "ef1bc38415e8ff82cd84aec457e9a1c2ccfb39b37acce6af8ea326add0db32a4",
+        "bytes": 596975
+      },
+      "forma-hero-poster.webp": {
+        "sha256": "547e0f91496cc8de61353320b346a63d33c8d13cb5537e85b11e5e1b44b93eff",
+        "bytes": 45122
+      }
+    }
+  },
+  {
+    "brand": "vale",
+    "source": "https://www.pexels.com/video/cosmetologist-using-a-device-on-a-patient-4824011/",
+    "author": "Anna Shvets",
+    "license": "https://www.pexels.com/license/",
+    "reviewed": "2026-11-27",
+    "source_sha256": "c57452becde88e9f9268c5ff035a3f46ba79ed0c0332174ac64e289a042e2170",
+    "use": "Illustrative stock; no endorsement, actual practice, specific equipment offering or patient outcome implied.",
+    "processing": "0.2s start; 6s source slowed 1.4x to approximately 8.4s; H.264 1280x720 24fps; no audio; faststart; first-frame WebP poster.",
+    "files": {
+      "vale-hero-video.mp4": {
+        "sha256": "50c54b563bf2b8393824c2fbef6a7eff8765e63d525943d94ff1b436d8449ada",
+        "bytes": 245995
+      },
+      "vale-hero-poster.webp": {
+        "sha256": "e8f971428119d6998b43fc1f983ae1649a4b526facf288749359327261a0e230",
+        "bytes": 26496
+      }
+    }
+  },
+  {
+    "brand": "morrow",
+    "source": "https://www.pexels.com/video/a-woman-meditating-outdoors-6836692/",
+    "author": "Los Muertos Crew",
+    "license": "https://www.pexels.com/license/",
+    "reviewed": "2026-11-27",
+    "source_sha256": "65aa6b4ff435f32ddce93384b96b86520799054ad6011281b69ed833d8f11072",
+    "use": "Illustrative stock; no endorsement, actual practice, specific equipment offering or patient outcome implied.",
+    "processing": "0.2s start; 6s source slowed 1.4x to approximately 8.4s; H.264 1280x720 24fps; no audio; faststart; first-frame WebP poster.",
+    "files": {
+      "morrow-hero-video.mp4": {
+        "sha256": "734baa80e9dbf53f5b52f75054557532b20a1e745b30cb5175eccc37d10a0129",
+        "bytes": 2418821
+      },
+      "morrow-hero-poster.webp": {
+        "sha256": "bf9e21366a2ece57c2dda5b000d4d44c224e45e770214395ac5bd60a4c3438b5",
+        "bytes": 182306
+      }
+    }
+  }
+]
